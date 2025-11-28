@@ -1,9 +1,9 @@
 {
   "timezone": "America/Los_Angeles",
   "budgets": {
-    "nightly_amount": 1000,
-    "daytime_amount": 5000,
-    "comment": "Amounts are in cents (1000 = $10.00, 5000 = $50.00)"
+    "nightly_amount": 5000,
+    "restore_original": true,
+    "comment": "nightly_amount in cents (5000 = $50.00). restore_original=true means daytime restores to pre-nightly budget"
   },
   "schedule": {
     "nightly_time": "00:00",

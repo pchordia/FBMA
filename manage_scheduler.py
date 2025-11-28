@@ -43,11 +43,20 @@ class SchedulerManager:
         print(f"  Nightly Time (low budget): {self.config['schedule']['nightly_time']}")
         print(f"  Daytime Time (high budget): {self.config['schedule']['daytime_time']}")
         
-        print(f"\n💰 Budget Amounts:")
+        print(f"\n💰 Budget Settings:")
         nightly = self.config['budgets']['nightly_amount']
-        daytime = self.config['budgets']['daytime_amount']
+        restore = self.config['budgets'].get('restore_original', False)
         print(f"  Nightly Amount: ${nightly/100:.2f} ({nightly} cents)")
-        print(f"  Daytime Amount: ${daytime/100:.2f} ({daytime} cents)")
+        print(f"  Daytime Behavior: {'Restore to original budgets' if restore else 'Fixed amount'}")
+        
+        # Show stored budgets if any
+        try:
+            with open('budget_state.json', 'r') as f:
+                state = json.load(f)
+                if state.get('original_budgets'):
+                    print(f"\n💾 Stored Original Budgets: {len(state['original_budgets'])} items")
+        except:
+            pass
         
         print(f"\n🚫 Exclusions:")
         print(f"  Excluded Ad Sets: {len(self.config['excluded_adsets'])}")
@@ -63,12 +72,12 @@ class SchedulerManager:
         
         print("=" * 80 + "\n")
     
-    def set_budgets(self, nightly_dollars, daytime_dollars):
-        """Set budget amounts in dollars"""
+    def set_nightly_budget(self, nightly_dollars):
+        """Set nightly budget amount in dollars"""
         self.config['budgets']['nightly_amount'] = int(nightly_dollars * 100)
-        self.config['budgets']['daytime_amount'] = int(daytime_dollars * 100)
         self.save_config()
-        print(f"✅ Budgets updated: Nightly=${nightly_dollars:.2f}, Daytime=${daytime_dollars:.2f}")
+        print(f"✅ Nightly budget updated: ${nightly_dollars:.2f}")
+        print(f"   Daytime will restore to original budgets")
     
     def exclude_adset(self, adset_id):
         """Add an ad set to exclusion list"""
@@ -152,8 +161,8 @@ Usage:
 
 Commands:
   show                          - Show current configuration
-  set-budgets <nightly> <day>   - Set budget amounts in dollars
-                                  Example: set-budgets 10 50
+  set-nightly-budget <amount>   - Set nightly budget amount in dollars
+                                  Example: set-nightly-budget 50
   exclude-adset <id>            - Exclude an ad set from scheduling
   include-adset <id>            - Include an ad set in scheduling
   exclude-campaign <id>         - Exclude a campaign from scheduling
@@ -163,7 +172,7 @@ Commands:
   
 Examples:
   python manage_scheduler.py show
-  python manage_scheduler.py set-budgets 10 50
+  python manage_scheduler.py set-nightly-budget 50
   python manage_scheduler.py exclude-adset 6913347655784
   python manage_scheduler.py toggle-dry-run
     """)
@@ -180,14 +189,13 @@ def main():
         if command == 'show':
             manager.show_config()
         
-        elif command == 'set-budgets':
-            if len(sys.argv) < 4:
-                print("❌ Error: Please provide nightly and daytime amounts")
-                print("Example: python manage_scheduler.py set-budgets 10 50")
+        elif command == 'set-nightly-budget':
+            if len(sys.argv) < 3:
+                print("❌ Error: Please provide nightly budget amount")
+                print("Example: python manage_scheduler.py set-nightly-budget 50")
                 return
             nightly = float(sys.argv[2])
-            daytime = float(sys.argv[3])
-            manager.set_budgets(nightly, daytime)
+            manager.set_nightly_budget(nightly)
         
         elif command == 'exclude-adset':
             if len(sys.argv) < 3:
