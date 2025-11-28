@@ -1,0 +1,67 @@
+name: Facebook Budget Scheduler
+
+on:
+  schedule:
+    # Runs at 12:00 AM Pacific Time (8:00 AM UTC during PST, 7:00 AM UTC during PDT)
+    # Using 8:00 AM UTC for standard time
+    - cron: '0 8 * * *'
+    
+    # Runs at 7:00 AM Pacific Time (3:00 PM UTC during PST, 2:00 PM UTC during PDT)
+    # Using 3:00 PM UTC for standard time
+    - cron: '0 15 * * *'
+    
+  # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  adjust-budgets:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run Budget Scheduler
+      env:
+        FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      run: |
+        echo "Starting budget scheduler..."
+        python budget_scheduler_v2.py
+        echo "Scheduler completed"
+    
+    - name: Save state file
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: budget-state
+        path: budget_state.json
+        retention-days: 7
+    
+    - name: Commit state changes
+      if: success()
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Check if budget_state.json has changes
+        if ! git diff --quiet budget_state.json; then
+          git add budget_state.json
+          git commit -m "Update budget state [automated]"
+          git push
+        else
+          echo "No state changes to commit"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
