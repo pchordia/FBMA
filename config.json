@@ -13,6 +13,6 @@
     "6913347655784"
   ],
   "excluded_campaigns": [],
-  "dry_run": true,
+  "dry_run": false,
   "comment": "Set dry_run to false to enable actual budget changes"
 }
