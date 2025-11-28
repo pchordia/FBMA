@@ -212,7 +212,7 @@ class FacebookDataDownloader:
         return filepath
     
     def download_daily_report(self, days_ago=1):
-        """Download comprehensive daily report with all breakdowns"""
+        """Download daily report with essential breakdowns only"""
         date_range = self.get_date_range(days_ago)
         date_str = date_range['since'].replace('-', '')
         
@@ -222,8 +222,8 @@ class FacebookDataDownloader:
         
         reports = {}
         
-        # 1. Ad-level overview (no breakdowns)
-        print("\n1. Ad-level overview...")
+        # 1. Ad-level overview (no breakdowns) - MAIN FILE
+        print("\n1. Ad-level overview (main file)...")
         ad_data = self.download_ad_insights(date_range, level='ad')
         if ad_data:
             flat_data = self.flatten_actions(ad_data)
@@ -232,52 +232,46 @@ class FacebookDataDownloader:
                 f'ad_overview_{date_str}.csv'
             )
         
-        # 2. Ad-level with age/gender breakdown
-        print("\n2. Ad-level with age/gender breakdown...")
-        demo_data = self.download_ad_insights(
+        # 2. Age breakdown
+        print("\n2. Age breakdown...")
+        age_data = self.download_ad_insights(
             date_range, 
             level='ad',
-            breakdowns=['age', 'gender']
+            breakdowns=['age']
         )
-        if demo_data:
-            flat_data = self.flatten_actions(demo_data)
-            reports['demographics'] = self.save_to_csv(
+        if age_data:
+            flat_data = self.flatten_actions(age_data)
+            reports['age'] = self.save_to_csv(
                 flat_data,
-                f'ad_demographics_{date_str}.csv'
+                f'ad_by_age_{date_str}.csv'
             )
         
-        # 3. Ad-level with placement breakdown
-        print("\n3. Ad-level with placement breakdown...")
+        # 3. Gender breakdown
+        print("\n3. Gender breakdown...")
+        gender_data = self.download_ad_insights(
+            date_range,
+            level='ad',
+            breakdowns=['gender']
+        )
+        if gender_data:
+            flat_data = self.flatten_actions(gender_data)
+            reports['gender'] = self.save_to_csv(
+                flat_data,
+                f'ad_by_gender_{date_str}.csv'
+            )
+        
+        # 4. Placement breakdown
+        print("\n4. Placement breakdown...")
         placement_data = self.download_ad_insights(
             date_range,
             level='ad',
-            breakdowns=['publisher_platform', 'platform_position']
+            breakdowns=['publisher_platform']
         )
         if placement_data:
             flat_data = self.flatten_actions(placement_data)
             reports['placement'] = self.save_to_csv(
                 flat_data,
-                f'ad_placement_{date_str}.csv'
-            )
-        
-        # 4. AdSet-level overview
-        print("\n4. AdSet-level overview...")
-        adset_data = self.download_ad_insights(date_range, level='adset')
-        if adset_data:
-            flat_data = self.flatten_actions(adset_data)
-            reports['adset_overview'] = self.save_to_csv(
-                flat_data,
-                f'adset_overview_{date_str}.csv'
-            )
-        
-        # 5. Campaign-level overview
-        print("\n5. Campaign-level overview...")
-        campaign_data = self.download_ad_insights(date_range, level='campaign')
-        if campaign_data:
-            flat_data = self.flatten_actions(campaign_data)
-            reports['campaign_overview'] = self.save_to_csv(
-                flat_data,
-                f'campaign_overview_{date_str}.csv'
+                f'ad_by_placement_{date_str}.csv'
             )
         
         print("\n" + "=" * 80)

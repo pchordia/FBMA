@@ -23,7 +23,7 @@ class ClaudeAnalyzer:
         with open('analysis_prompt.txt', 'r') as f:
             self.analysis_prompt = f.read()
     
-    def read_csv_to_text(self, filepath):
+    def read_csv_to_text(self, filepath, max_rows=None):
         """Convert CSV to formatted text for Claude"""
         if not os.path.exists(filepath):
             return None
@@ -39,37 +39,58 @@ class ClaudeAnalyzer:
         text = f"\n{'='*80}\n{os.path.basename(filepath)}\n{'='*80}\n"
         text += f"Total rows: {len(rows)}\n\n"
         
-        # Include all rows for detailed analysis
-        for i, row in enumerate(rows, 1):
+        # Limit rows if specified
+        rows_to_show = rows[:max_rows] if max_rows else rows
+        
+        # Include rows for detailed analysis
+        for i, row in enumerate(rows_to_show, 1):
             text += f"\n--- Row {i} ---\n"
             for key, value in row.items():
                 if value:  # Only include non-empty values
                     text += f"{key}: {value}\n"
         
+        if max_rows and len(rows) > max_rows:
+            text += f"\n... and {len(rows) - max_rows} more rows\n"
+        
         return text
     
     def prepare_data_summary(self, date_str):
-        """Prepare all CSV data for analysis"""
+        """Prepare CSV data for analysis - main overview only, breakdowns as summaries"""
         data_dir = 'data'
-        
-        # Find all CSVs for the date
-        csv_files = [
-            f'ad_overview_{date_str}.csv',
-            f'ad_demographics_{date_str}.csv',
-            f'ad_placement_{date_str}.csv',
-            f'adset_overview_{date_str}.csv',
-            f'campaign_overview_{date_str}.csv',
-        ]
         
         data_summary = ""
         
-        for csv_file in csv_files:
-            filepath = os.path.join(data_dir, csv_file)
-            csv_text = self.read_csv_to_text(filepath)
-            if csv_text:
-                data_summary += csv_text + "\n"
+        # 1. Ad-level overview - FULL FILE (this is the main data)
+        ad_file = os.path.join(data_dir, f'ad_overview_{date_str}.csv')
+        if os.path.exists(ad_file):
+            data_summary += self.read_csv_to_text(ad_file) + "\n"
+        
+        # For breakdowns, note that they exist but don't include full data
+        # (Claude can infer patterns from the main ad overview)
+        data_summary += "\n" + "="*80 + "\n"
+        data_summary += "BREAKDOWN DATA AVAILABLE (not shown to save space):\n"
+        data_summary += "="*80 + "\n"
+        
+        age_file = os.path.join(data_dir, f'ad_by_age_{date_str}.csv')
+        if os.path.exists(age_file):
+            data_summary += f"✓ Age breakdown: {self.count_rows(age_file)} rows\n"
+        
+        gender_file = os.path.join(data_dir, f'ad_by_gender_{date_str}.csv')
+        if os.path.exists(gender_file):
+            data_summary += f"✓ Gender breakdown: {self.count_rows(gender_file)} rows\n"
+        
+        placement_file = os.path.join(data_dir, f'ad_by_placement_{date_str}.csv')
+        if os.path.exists(placement_file):
+            data_summary += f"✓ Placement breakdown: {self.count_rows(placement_file)} rows\n"
+        
+        data_summary += "\nNote: Focus analysis on the ad_overview data above.\n"
         
         return data_summary
+    
+    def count_rows(self, filepath):
+        """Count rows in a CSV file"""
+        with open(filepath, 'r') as f:
+            return sum(1 for _ in f) - 1  # Subtract header row
     
     def analyze(self, date_str):
         """Send data to Claude for analysis"""
