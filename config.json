@@ -1,0 +1,18 @@
+{
+  "timezone": "America/Los_Angeles",
+  "budgets": {
+    "nightly_amount": 1000,
+    "daytime_amount": 5000,
+    "comment": "Amounts are in cents (1000 = $10.00, 5000 = $50.00)"
+  },
+  "schedule": {
+    "nightly_time": "00:00",
+    "daytime_time": "07:00"
+  },
+  "excluded_adsets": [
+    "6913347655784"
+  ],
+  "excluded_campaigns": [],
+  "dry_run": true,
+  "comment": "Set dry_run to false to enable actual budget changes"
+}
