@@ -1,0 +1,71 @@
+name: Daily Facebook Ads Analysis
+
+on:
+  schedule:
+    # Runs at 8:00 AM Pacific Time (4:00 PM UTC during PST, 3:00 PM UTC during PDT)
+    # After the 7am budget restoration completes
+    - cron: '0 16 * * *'
+  
+  # Allows manual trigger
+  workflow_dispatch:
+
+jobs:
+  analyze-ads:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Download Facebook Ads Data
+      env:
+        FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
+      run: |
+        echo "📥 Downloading Facebook Ads data..."
+        python download_fb_data.py
+    
+    - name: Analyze with Claude AI
+      env:
+        FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      run: |
+        echo "🤖 Running Claude AI analysis..."
+        python analyze_with_claude.py
+    
+    - name: Upload CSV Data
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: facebook-ads-data
+        path: data/*.csv
+        retention-days: 30
+    
+    - name: Upload Analysis Report
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: analysis-report
+        path: analyses/*.txt
+        retention-days: 90
+    
+    - name: Display Analysis Summary
+      if: success()
+      run: |
+        echo "✅ Analysis complete!"
+        echo ""
+        echo "📊 Files created:"
+        ls -lh data/ analyses/
+        echo ""
+        echo "📝 Latest analysis:"
+        cat analyses/*.txt | head -100
+

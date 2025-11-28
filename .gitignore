@@ -1,6 +1,11 @@
 # Environment variables
 .env
 
+# Data and analysis outputs
+data/
+analyses/
+*.csv
+
 # Python
 __pycache__/
 *.py[cod]
