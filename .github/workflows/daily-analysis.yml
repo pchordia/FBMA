@@ -41,7 +41,8 @@ jobs:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: |
         echo "🤖 Running GPT-5.1 analysis on last 7 days..."
-        python analyze_with_openai.py
+        mkdir -p analyses
+        python analyze_with_openai.py || echo "⚠️ Analysis failed but continuing workflow"
     
     - name: Commit new data files
       if: success()
@@ -80,8 +81,16 @@ jobs:
         echo "✅ Analysis complete!"
         echo ""
         echo "📊 Files created:"
-        ls -lh data/ analyses/
+        echo "Data files:"
+        ls -lh data/
+        echo ""
+        echo "Analysis files:"
+        ls -lh analyses/ 2>/dev/null || echo "No analyses folder found"
         echo ""
         echo "📝 Latest analysis:"
-        cat analyses/*.txt | head -100
+        if [ -f analyses/*.txt ]; then
+          cat analyses/*.txt | head -100
+        else
+          echo "No analysis file generated"
+        fi
 
