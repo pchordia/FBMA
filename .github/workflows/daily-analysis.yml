@@ -27,22 +27,38 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Download Facebook Ads Data (Last 7 Days)
+    
+    - name: Download Yesterday's Facebook Ads Data
       env:
         FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
       run: |
-        echo "📥 Downloading last 7 days of Facebook Ads data..."
-        python download_weekly_data.py
+        echo "📥 Downloading yesterday's Facebook Ads data..."
+        python download_fb_data.py
     
-    - name: Analyze with GPT-5.1
+    - name: Analyze with GPT-5.1 (Last 7 Days)
       env:
         FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: |
-        echo "🤖 Running GPT-5.1 analysis..."
+        echo "🤖 Running GPT-5.1 analysis on last 7 days..."
         python analyze_with_openai.py
     
-    - name: Upload CSV Data
+    - name: Commit new data files
+      if: success()
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Add new data files
+        git add data/*.csv
+        
+        # Commit if there are changes
+        git diff --cached --quiet || git commit -m "Add daily data $(date +'%Y-%m-%d') [automated]"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Upload CSV Data (for manual download)
       uses: actions/upload-artifact@v4
       if: always()
       with:

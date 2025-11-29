@@ -1,10 +1,8 @@
 # Environment variables
 .env
 
-# Data and analysis outputs
-data/
+# Analysis outputs (but keep data/ for 7-day history)
 analyses/
-*.csv
 
 # Python
 __pycache__/
