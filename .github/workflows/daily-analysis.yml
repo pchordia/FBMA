@@ -27,20 +27,20 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Download Facebook Ads Data
+    - name: Download Facebook Ads Data (Last 7 Days)
       env:
         FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
       run: |
-        echo "📥 Downloading Facebook Ads data..."
-        python download_fb_data.py
+        echo "📥 Downloading last 7 days of Facebook Ads data..."
+        python download_weekly_data.py
     
-    - name: Analyze with Claude AI
+    - name: Analyze with GPT-5.1
       env:
         FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
-        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: |
-        echo "🤖 Running Claude AI analysis..."
-        python analyze_with_claude.py
+        echo "🤖 Running GPT-5.1 analysis..."
+        python analyze_with_openai.py
     
     - name: Upload CSV Data
       uses: actions/upload-artifact@v4
