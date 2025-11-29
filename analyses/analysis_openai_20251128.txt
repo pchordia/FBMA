@@ -1,0 +1,328 @@
+Facebook Ads Analysis (OpenAI GPT) - 20251128
+================================================================================
+
+Here’s what jumps out from the last 7 days, looking at Cost per Trial (CPT) and where the funnel is actually working.
+
+---
+
+### 1. Overall performance & trend
+
+**High level:**  
+- The week starts with very expensive trials (often $50–$150+ CPT on big spenders), then improves sharply over the last 3–4 days.  
+- The improvement is driven by:
+  - The original rap install set maturing (Tyson/Jesus).  
+  - Strong new **female rap** creatives (06 fbg og, 07 black_4, 12 Prerna).  
+  - Some better-behaved StartTrial adsets.
+
+You can see this in a few anchor creatives:
+
+- **Tyson_rap_2_4x5 – Install campaign (6913358397984)**  
+  - 11/22: CPT for “subscribe/start_trial” ≈ **$145+**  
+  - 11/23–24: improves to **$50–55**  
+  - 11/25: **$25–26**  
+  - 11/27: ~**$31**  
+  - 11/28: ~**$12**  
+  → Same creative, same campaign, an order‑of‑magnitude drop in trial cost over the week.
+
+- **Female “06 fbg og – Copy” – Install, female adset (6916177886184)**  
+  - 11/26: CPT ≈ **$14.9**  
+  - 11/27: ≈ **$8.5**  
+  - 11/28: ≈ **$11.1–14** (two days look slightly different but in that band)  
+  → Consistently in the **high single / low double digits** with solid volume.
+
+- **Female “06 fbg og” – Purchase/StartTrial adset (6916167127784)**  
+  - 11/26–28: CPT ≈ **$10–13** all three days.
+
+So directionally:
+
+- **Early week:** a lot of spend with trials often costing $50–$150.  
+- **Last 3 days:** main rap creatives (male + female) are mostly clustered around **$8–$20 CPT** with several at the low end of that range.
+
+Without true 7‑day aggregation I won’t fake exact blended CPT, but on a spend‑weighted basis it’s clearly **much better in the last 48–72 hours** vs the start of the period.
+
+Funnel-wide:
+
+- CTR on best creatives: **~2–2.8%** on install sets, **~1.4–1.8%** on purchase/StartTrial.  
+- CPC on install sets: typically **$0.50–0.80**.  
+- CPI (cpa_omni_app_install): 
+  - Install campaigns: often **$1–2** on winners (excellent).  
+  - Purchase/StartTrial campaigns: **$3–8** depending on creative.  
+- The **install → trial step** is where most of the variance lives: two ads with similar CPI can have radically different CPT.
+
+---
+
+### 2. What’s working (with real spend)
+
+#### A. Female rap creatives (big positive signal)
+
+These are quietly becoming the workhorses of the account.
+
+**Install – Female adset (FB_iOS_itoshi_rap_female – 6916176936184)**  
+
+1. **06 fbg og – Copy (6916177886184)**  
+   - 11/26: Spend **$44.8**, CPI **$1.16**, CPT ~**$14.9**  
+   - 11/27: Spend **$229.3**, CPI **$1.16**, CPT ~**$8.5**  
+   - 11/28: Spend **$321.0**, CPI **$1.55**, CPT ~**$11.1**  
+   - CTR 2.5–2.8%, CPC ~ $0.48–0.59, CPV low.  
+   - Strong engagement rankings (ABOVE_AVERAGE) and stable CVR.  
+   **Takeaway:** High-volume, efficient CPT, stable performance. This is a scale asset.
+
+2. **07 black_4 – Copy (6916177885984)**  
+   - 11/26: Spend **$31.4**, CPI **$0.95**, CPT ~**$5.2–10.5** (start_trial cost oscillates but in low double digits).  
+   - 11/27: Spend **$31.4**, CPI **$0.95**, CPT ~**$5.2**.  
+   - 11/28: Spend **$23.6**, CPI **$1.57**, CPT ~**$11.8**.  
+   - CTR ~2.0–2.4%, CPC ~ $0.53–0.64, very efficient CPIs.  
+   **Takeaway:** Another very strong female character. Almost Tyson‑level CTR with better CPT than most male creatives.
+
+**Purchase/StartTrial – Female set (FB_iOS_Purchase_itoshi_rap_female_261125 – 6916162284184)**  
+
+3. **06 fbg og (6916167127784)**  
+   - 11/26–28 spend: **$41→$125→$154**, CPI ~**$3.2**, CPT ~**$10–12.5**.  
+   - CTR 1.6–2.3%; CPC ~ $1.1–1.6.  
+   **Takeaway:** Purchase-optimized but still giving solid trial costs in line with install sets. Good diversification of optimization event without blowing up CPT.
+
+4. **07 black_4 (6916167363584)**  
+   - 11/26–28 spend: **$235→$203→$137**, CPI **$3.1–4.7**, CPT ~**$8–14**.  
+   - Consistently ABOVE_AVERAGE conversion ranking.  
+   - Also driving some purchases at decent CAC (~$67–78 per purchase).  
+   **Takeaway:** Reliable engine. Keep as a core BAU creative.
+
+5. **12 Prerna (6916168066184)**  
+   - 11/26–28 spend: **$39.7→$51.4→$52.4**, CPI ~**$2.5–3.1**, CPT ~**$4–8.6** (very strong on 28th).  
+   - CTR pushing ~2%, good engagement.  
+   **Takeaway:** Sneakily one of the better CPTs in the entire account; deserves more budget.
+
+**StartTrial – Female only (FB_iOS_Rap_StartTrial_female_281125 – 6917504275184)**  
+
+6. **06 fbg og – Copy 2 (6917505479784)**  
+   - 11/28: Spend **$30.7**, CPI **$3.84**, CPT ~**$10.2**.  
+   - CTR ~1.5%, CPC ~ $1.62.  
+   **Takeaway:** Early but promising. It’s matching or beating the main StartTrial rap set on CPT with less spend.
+
+7. **12 Prerna – Copy 2 (6917505481984)**  
+   - 11/28: Spend **$5.5**, CPI **$5.46**, low volume but showing installs & some depth events.  
+   **Takeaway:** Too small to call, but given how strong Prerna is in other adsets, this is worth feeding more impressions.
+
+**Net on female set:**  
+You now have **three female avatars (FBG OG, Black_4, Prerna)** consistently returning **$8–15 CPT** at meaningful spend and across multiple optimization types. These are absolutely “core” assets and should probably be the default scaling direction vs only Tyson/Jesus.
+
+---
+
+#### B. Male rap creatives still pulling their weight
+
+1. **Tyson_rap_2_4x5 – Install set1 (6913358397984)**  
+   - Big journey: CPT collapses from **$145+ → ~$50 → ~$25 → ~$12–31** over the week.  
+   - CPIs **$1.3–1.7**, CTR ~1.5–2.2%.  
+   **Takeaway:** Still a hero creative. Now finally efficient again on trials after early days of expensive learning.
+
+2. **Jesus_rap_1_4x5 – Install set1 (6913358815984)**  
+   - CPIs **$1.5**, CTR 1.2–1.4%.  
+   - CPT noisy but trending down (e.g. $27–53 range vs $90+ earlier).  
+   **Takeaway:** Slightly weaker than Tyson/female leads but good for volume and variation.
+
+3. **Set2 “02 Eddie_Snoop” (6916858590184)**  
+   - 11/27–28 spend: **$110.8 → $94.6**, CPI **$1.2–1.4**, CTR ~1.7–1.8%.  
+   - CPT ~**$10–37** depending on day (deep events are more sparse so noisier).  
+   **Takeaway:** Strong front-end (CTR, CPC, CPI). Worth continuing, but watch install→trial.
+
+4. **Set2 “04 Morgan_Gin” (6916864174784)**  
+   - 11/27: Spend **$14.3**, CPI **$1.4**, great CTR **2.8%**.  
+   - 11/28: Spend **$45.7**, CPI **$0.99**, CPT ~**$15.2**.  
+   **Takeaway:** Nice combo of high CTR and reasonable trial cost. Good rotation piece.
+
+---
+
+#### C. StartTrial rap set1 – one keeper, one volatile
+
+In **FB_iOS_Rap_StartTrial_Set1 (6915577150584)**:
+
+- **Tyson_rap_2_4x5 (6915585773184)**  
+  - 11/25–28 CPT ~**$13–32**, CPI **$5.8–6.1**, CTR ~1.1–1.7%.  
+  - Not cheap on CPI, but decent install→trial conversion.  
+  **Takeaway:** As a StartTrial-optimized anchor, this is “OK”, but CPT is usually worse than running the same creative in install/purchase campaigns.
+
+- **Jesus_rap_1_4x5 (6915585772784)**  
+  - Wild swings in CPT: **$68 → $68 → $7.7 → $26**.  
+  - CPIs in **$5–6** range, CTR ~1.0%.  
+  **Takeaway:** Too unstable. Looks fine when a single cheap trial lands, but on a 7‑day view this isn’t competitive with female or Tyson.
+
+---
+
+### 3. What’s not working / where the funnel breaks
+
+#### A. Baby avatars – good clicks, bad trials
+
+**Install baby adset (FB_iOS_itoshi_rap_baby – 6916176486384)**  
+
+- **10 Asian baby – Copy (6916177448584)**  
+  - CPIs **~$1.4–1.6**, CTR ~1.6–2.3% (really good).  
+  - CPT ~**$3–18** depending on day and campaign (note: in purchase vs install it differs).  
+  - The pure install adset variant has reasonable trial costs (~$3–6 start_trial on 27–28), but…
+
+- **11 Black baby – Copy (6916177448784)**  
+  - CPIs **$1.8–3.2**, CTR 1.6–2.2%.  
+  - CPT is ugly: **$25–60** on the purchase/start_trial side.  
+  - Even in the install adset, CPT hovers in the **$25–60** band.
+
+**Purchase baby set (6916172721584)** shows similarly high CPT (often **$16–27+**).
+
+**What’s happening:**
+
+- **Top of funnel is healthy** (CTR, CPC, CPI look similar to adult rap creatives).  
+- **Install → trial conversion is poor**, especially for Black baby.  
+- Extremely high CPT suggests a misalignment between this creative concept and the cohort that actually trials/pays.
+
+**Recommendation:**  
+- Keep **10 Asian baby** where CPT is acceptable (install adset with $3–6 CPT), but **cut or heavily downweight 11 Black baby** in purchase/StartTrial campaigns until it proves itself.  
+- Treat “baby” as experimental; it’s not proving it deserves meaningful budget at current trial economics.
+
+---
+
+#### B. Splitscreen/PNP/Anime sets – expensive experiments
+
+A lot of the older, non‑rap assets (splitscreen Y2K, pnp, anime) are:
+
+- Running in purchase-optimized campaigns with **CPMs in the $40–55 range**,  
+- CPIs often **$10–17+** (derived from trial/purchase CPA),  
+- Trial costs **$30–80+** when they exist,  
+- And very modest spend.
+
+Examples:
+
+- **04 creatydesign06_natural-looking_y2k (splitscreen – 6912302343584)**  
+  - 11/22: Spend **$32.7**, CPI **$10.9**, CPT ~**$11–>40** depending on mapping, but overall not competitive; BELOW_AVERAGE engagement ranking.
+
+- **10 kimk-braids_Slayer (splitscreen – 6912306130584)**  
+  - 11/22: Spend **$84.7**, CPI **$16.9**, CPT ~**$17–80**.  
+  - CTR ~1.2%; CPM ~ $43.
+
+- **PNP variants (6912311358984 adset)** – 04 creatydesign06_pnp, 06 echo_ai_pnp, 07 gaia_pnp, 09 kimk-braids_pnp  
+  - CPIs **$11–16**.  
+  - CPTs generally in the **$13–60** range.  
+  - CTRs are fine (~1.5–2.4%) but purchase/StartTrial optimization plus lower downstream conversion kills efficiency.
+
+These are **clearly weaker than rap creatives** on CPT, even after accounting for lower volume and noise.
+
+**Recommendation:**  
+- Treat these as “archive” / branding test assets.  
+- **Pause or hard-cap bid/budget** on any splitscreen/PNP/anime ad that:
+  - Has spent **>$50** with CPT clearly worse than **~$20–25**,
+  - And doesn’t show better monetization in backend data.
+
+Shift that budget into rap install/purchase where we’re already seeing sub‑$15 CPT at scale.
+
+---
+
+#### C. StartTrial subtitles & some StartTrial rap variants
+
+- **Subtitled variants (jesus_rap_1_4x5_subtitles, tyson_rap_2_4x5_subtitles)** in StartTrial set1:
+  - CPIs **$10–13**, CTR modest, and CPT (where we see it) **>$10–13** per trial on tiny volume.  
+  - Not competitive vs non‑subbed versions.
+
+- Several StartTrial set2 rap variants (Mike_sicko, Snoop_sicko, etc.)  
+  - Very low trials, CPIs often **$5–8**, engagement OK but no evidence of efficient trials.  
+  - These are fine as micro‑tests but shouldn’t hold meaningful budget.
+
+**Where funnel breaks here:**
+
+- Usually not CTR: people do click.  
+- **Install rates are OK**, but **StartTrial-optimized adsets are paying a huge premium on CPI** vs install/purchase, and then not compensating with better install→trial conversion.
+
+---
+
+### 4. Notable changes, swings, and delivery quirks
+
+A few things that stand out:
+
+1. **Massive CPT improvement on main rap install set**  
+   - Tyson_rap_2 and Jesus_rap_1 went from “this is not viable” (CPT $100+) on 11/22 to “pretty efficient” ($10–30) by 11/28.  
+   - That’s likely a combo of:
+     - Facebook learning completing,  
+     - More trial events coming in,  
+     - Plus the addition of the strong female creatives shifting overall campaign behavior.
+
+2. **Female creatives scaling quietly and successfully**  
+   - There’s a clear ramp in spend on 06 fbg og + 07 black_4 from 11/26 onward, with **no blow‑up in CPT**.  
+   - Engagement remains ABOVE_AVERAGE, suggesting room to keep pushing.
+
+3. **Purchase campaigns still paying a premium**  
+   - Purchase‑optimized rap set6 (6913866281784) shows CPIs in **$4–8**, CPT often **$15–40**.  
+   - They’re *not* awful, but in many cases, **the same creatives in install campaigns are getting better trial economics**.  
+   - For example, Tyson_rap_2_copy in purchase vs Tyson_rap_2_install.
+
+4. **High volatility in low‑volume “wins”**  
+   - Plenty of ads show $4–$10 CPT, but on **1–3 trials total**.  
+   - Where I’ve called things “promising”, I’ve tried to only do it > ~$50 spend; everything sub‑$20 should be treated as noise.
+
+5. **No frequency issues yet**  
+   - Most adsets are still in the **1.0–1.2 frequency** range; even the heavy‑spend rap install set is not over‑served yet.  
+   - We’re not obviously hitting saturation on the main audiences.
+
+---
+
+### 5. Questions, hypotheses & next tests
+
+**Questions I’d want to dig into (with backend data):**
+
+1. **Downstream value by persona (male vs female vs baby vs anime)**  
+   - We know female rap ads look great on CPT.  
+   - Do those users **retain and convert to paying subs** as well or better than Tyson/Jesus cohorts?  
+   - If yes, I’d actively *re‑center* the creative strategy on them.
+
+2. **Install vs StartTrial optimization trade‑off**  
+   - For the same creative (e.g., Tyson or FBG OG), we’re seeing **much cheaper CPIs and similar install→trial rates** on install campaigns vs StartTrial campaigns.  
+   - It may be that **AEO/StartTrial optimization is overpaying** for a small quality bump (or none at all).  
+   - Worth pulling cohort data: is LTV meaningfully higher on users acquired via StartTrial-optimized adsets?
+
+3. **Effect of creative theme on install→trial**  
+   - Baby avatars & splitscreen/PNP have good CTRs but much weaker trial conversion.  
+   - Hypothesis: they attract more “lookers” than “makers” (people who think it’s cute, not people willing to pay).  
+   - Could we adjust **copy and framing** (e.g. more utility, less novelty) to filter those users better?
+
+**Concrete tests I’d run next:**
+
+1. **Scale female rap aggressively & systematically**
+   - Create a **dedicated CBO** with:
+     - 06 fbg og (male + female variants),  
+     - 07 black_4,  
+     - 12 Prerna,  
+     - 02 Eddie_Snoop + 04 Morgan_Gin as supporting creatives.
+   - Optimize for **StartTrial or AEO** but cap bids so CPT stays under your target (say mid‑teens).  
+   - Compare head‑to‑head vs current install CBO.
+
+2. **Trim and refocus experimental budgets**
+   - **Pause or cap**:
+     - Black baby purchase/startTrial variants (11 black baby in purchase set).  
+     - Splitscreen/PNP/anime ads with spend **>$50** and poor CPT.  
+     - Low‑volume StartTrial variants that have **no trials after $30–50 spend**.
+   - Reallocate that budget into:
+     - Female rap creatives across more lookalike / broad audiences.  
+     - The best performing male rap creatives (Tyson_rap_2, Eddie_Snoop, Morgan_Gin).
+
+3. **Install vs StartTrial split test for one hero creative**
+   - Example: 06 fbg og.  
+   - Run two otherwise‑identical adsets:
+     - One optimizing for **App Install**.  
+     - One for **StartTrial**.  
+   - Compare **CPT, CPI, and down‑funnel LTV** over a week.  
+   - Use that to decide where we standardize optimization (my guess: install + strong in‑app nudging may win on efficiency).
+
+4. **Creative iteration on female theme**
+   - Double down on what’s clearly resonating:
+     - Keep “rap performance” structure but vary: outfits, backgrounds, lyrics, on‑screen text.  
+     - Systematically test **openings and thumbnails** – CTR is already strong, but better hero frames could drop CPC further.
+
+5. **Tighten baby/adult segmentation**
+   - If you want to salvage baby avatars, try:
+     - A **separate adset** with slightly narrower, maybe younger skews.  
+     - Stronger “AI avatar video of YOU / your kid” messaging to attract paid‑intent rather than passive humor engagement.  
+   - If CPT doesn’t converge under **~$20–25** quickly, I’d park the concept.
+
+---
+
+**Summary to take into the room:**
+
+- The account looks **materially healthier in the last 3 days** than at the start of the week.  
+- The **female rap avatars (FBG OG, Black_4, Prerna)** are now **top-tier performers on CPT with real spend**; they deserve primary budget, not just supporting status.  
+- A significant chunk of experimental spend (baby, splitscreen, PNP/anime, some StartTrial variants) is **clearly sub‑par on CPT** and should be trimmed to feed winning rap creatives.  
+- The biggest remaining lever is likely **where we optimize (install vs trial) and which personas we lean into**, not just more brute‑force creative volume.
