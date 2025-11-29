@@ -9,38 +9,55 @@ CONTEXT:
 - Funnel: Impression → Click → Install → Trial
 - We run high-volume creative testing (multiple new ads daily)
 
-YOUR ANALYSIS SHOULD COVER:
+OUTPUT FORMAT (IMPORTANT)
 
-**1. Overall Performance**
-- Total spend, trials, blended CPT vs previous day/week
+Produce a visual, slide-ready summary (like a one-page dashboard) using markdown:
+
+- Use clear section headers (e.g., ### 1️⃣ Overall Performance).
+- Use tables to summarize:
+  - Best/worst creatives
+  - Funnel metrics (CTR, CPC, CPI, CPT) by cluster
+- Use short callouts and bold text for key takeaways (e.g., "Female rap avatars now core scale assets").
+- Keep it scan-friendly, like something you'd drop straight into a deck or Notion page.
+- It's fine (and encouraged) to use light emoji in headings for quick visual parsing (e.g., 🏆, 🚧, ❌).
+- Avoid long walls of text — favor compact sections, bullets, and tables.
+
+YOUR ANALYSIS SHOULD COVER
+
+1. Overall Performance
+- Total spend, trials, blended CPT vs previous day/week (estimate if needed).
 - Is performance trending better or worse? By how much?
+- Show trend visually in text, e.g., "Early week: $50–$150 CPT → Late week: $8–20 CPT".
 
-**2. What's Working**
+2. What's Working
 - Which ads/creatives are performing well with meaningful spend?
 - Any creative themes or patterns emerging among winners?
-- Don't hype low-spend "winners" — note when something looks promising but needs more volume
+- Clearly separate:
+  - Core scale creatives (high spend, good CPT),
+  - Promising but low-spend tests.
+- Use a table for top performers with: Creative name, placement/optimization, spend, CPI, CPT, key note.
 
-**3. What's Not Working**
+3. What's Not Working
 - Which ads have real spend but poor CPT?
 - Where is the funnel breaking? (CTR issue? CPI issue? Install-to-trial issue?)
 - Any obvious waste we should cut?
+- Summarize these in a table: Creative/cluster, issue (CTR/CPI/ITR), CPT, recommended action (pause / cap / move).
 
-**4. Notable Changes & Anomalies**
+4. Notable Changes & Anomalies
 - Anything unusual? Big swings in performance?
 - Ads that were working but suddenly aren't (or vice versa)?
 - Delivery issues, spending patterns, frequency problems?
+- Present as 3–6 punchy bullets under a heading like: ### 4️⃣ Notable Changes & Swings.
 
-**5. Questions & Hypotheses**
+5. Questions & Hypotheses
 - What would you want to dig into further?
 - Any tests worth running based on what you're seeing?
+- Present as a short list of questions + matching test ideas.
 
-TONE:
-- Analytical but conversational, like you're briefing the team
-- Lead with the most important insights
-- Be honest about uncertainty — flag where data is thin
-- Avoid over-structuring with excessive headers and bullets
-
-IMPORTANT:
-- Always consider spend when evaluating CPT — a $2 CPT on $4 spend means nothing
-- Focus attention on ads with meaningful spend ($50+ ideally)
-- Separate signal from noise
+TONE
+- Analytical but conversational, like you're briefing the team.
+- Lead with the most important insights at the top of each section.
+- Be honest about uncertainty — flag where data is thin (e.g., "looks good but only $18 spend").
+- Always consider spend when evaluating CPT — a $2 CPT on $4 spend means nothing.
+- Focus attention on ads with meaningful spend ($50+ ideally).
+- Separate signal from noise, and make that separation visually obvious in the output (e.g., "Core Scale," "Promising," "Archive/Pause").
