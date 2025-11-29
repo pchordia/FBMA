@@ -1,0 +1,48 @@
+*/Facebook Ads Analysis - 20251127
+================================================================================
+
+Looking at yesterday's data, here's what jumped out over my morning coffee:
+
+## Overall Performance - Mixed Signals
+
+We spent $1,866 across 61 active ads and generated trials at a blended CPT around $21-25 (eyeballing the conversion costs). That's actually not terrible for this vertical, but I'm seeing some concerning patterns in how that spend is distributed.
+
+The big picture concern? We're spreading budget way too thin. Over half our ads spent less than $10, which means we're basically burning money on statistical noise. Meanwhile, our few meaningful spenders are showing wildly different performance levels.
+
+## What's Working - Three Clear Winners
+
+**"06 fbg og - Copy"** ($229 spend) is our star performer with a $8.49 CPT and strong engagement metrics. This female avatar creative is absolutely crushing it - 2.5% CTR, solid video completion rates, and converting at nearly 3x better than our worst performers.
+
+**"jesus_rap_1_4x5"** ($159 spend) is also solid at $39.73 CPT. The engagement is there (8,800+ page engagements) and it's scaling well with good quality rankings.
+
+**"07 black_4"** ($203 spend) deserves attention - $10.14 CPT with 3 actual purchases. This female avatar is not just driving trials but converting to paid users.
+
+The pattern? **Female avatars are significantly outperforming male ones.** All three winners feature women, while our male-heavy rap content is struggling.
+
+## What's Not Working - Budget Bleeders
+
+**"11 black baby - Copy"** burned $59 for a single trial ($58.66 CPT). That's painful, especially since the original "11 black baby" performed much better at $16.48 CPT with meaningful spend.
+
+**Jesus_rap_1_4x5** in the StartTrial campaign spent $123 for 16 trials ($7.70 CPT) - which actually looks decent until you realize the install campaign version of the same creative is doing $39 CPT. Something's broken in that funnel.
+
+Most concerning: We have 30+ ads that spent under $5 each. That's just Facebook learning tax with zero signal.
+
+## Notable Changes & Red Flags
+
+**Campaign Fragmentation:** We're running the same creatives across multiple campaigns (Install vs Purchase vs StartTrial) with dramatically different results. "tyson_rap_2_4x5" has a $30.73 CPT in install but $26.65 CPT in purchase campaign - why are we not consolidating budget to the winner?
+
+**New Creative Testing:** The "rap_set2" creatives launched yesterday are mostly spending pocket change ($1-15 each). "02 Eddie_Snoop" looks promising at $111 spend but needs more volume to confirm the $36.94 CPT.
+
+**Delivery Issues:** Too many ads stuck in "Unknown" ranking, suggesting audience overlap or creative fatigue.
+
+## Questions & Hypotheses Worth Digging Into
+
+1. **Why are female avatars dramatically outperforming male ones?** This could be a fundamental insight about our target demo that should reshape our entire creative strategy.
+
+2. **What's causing the massive CPT variance between campaigns for identical creatives?** We need to audit our campaign setups - audiences, bidding, or optimization events might be misaligned.
+
+3. **Should we kill the rap theme entirely?** The male rap avatars are consistently underperforming. Maybe our audience wants different content themes.
+
+4. **Can we scale the winners harder?** "06 fbg og - Copy" at $8.49 CPT should be getting 5x more budget than it currently is.
+
+**Immediate Actions:** Pause everything under $50 spend, consolidate winning creatives into single campaigns, and triple the budget on female avatar ads. We're leaving money on the table by not feeding our winners.

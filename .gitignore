@@ -1,8 +1,7 @@
 # Environment variables
 .env
 
-# Analysis outputs (but keep data/ for 7-day history)
-analyses/
+# Data and analysis are now committed for historical tracking
 
 # Python
 __pycache__/

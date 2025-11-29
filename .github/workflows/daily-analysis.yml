@@ -44,17 +44,18 @@ jobs:
         mkdir -p analyses
         python analyze_with_openai.py || echo "⚠️ Analysis failed but continuing workflow"
     
-    - name: Commit new data files
+    - name: Commit new data and analysis files
       if: success()
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        # Add new data files
+        # Add new data and analysis files
         git add data/*.csv
+        git add analyses/*.txt
         
         # Commit if there are changes
-        git diff --cached --quiet || git commit -m "Add daily data $(date +'%Y-%m-%d') [automated]"
+        git diff --cached --quiet || git commit -m "Add daily data & analysis $(date +'%Y-%m-%d') [automated]"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
