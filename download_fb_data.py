@@ -193,15 +193,20 @@ class FacebookDataDownloader:
             print(f"⚠️  No data to save for {filename}")
             return None
         
+        filepath = f"data/{filename}"
+        os.makedirs('data', exist_ok=True)
+        
+        # Check if file already exists
+        if os.path.exists(filepath):
+            print(f"⏭️  File already exists: {filepath} - skipping")
+            return filepath
+        
         # Get all unique keys from all rows
         all_keys = set()
         for row in data:
             all_keys.update(row.keys())
         
         fieldnames = sorted(list(all_keys))
-        
-        filepath = f"data/{filename}"
-        os.makedirs('data', exist_ok=True)
         
         with open(filepath, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -219,6 +224,24 @@ class FacebookDataDownloader:
         print("=" * 80)
         print(f"📊 Downloading Facebook Ads Data for {date_range['since']}")
         print("=" * 80)
+        
+        # Check if we already have all the data for this date
+        expected_files = [
+            f'data/ad_overview_{date_str}.csv',
+            f'data/ad_by_age_{date_str}.csv',
+            f'data/ad_by_gender_{date_str}.csv',
+            f'data/ad_by_placement_{date_str}.csv'
+        ]
+        
+        all_exist = all(os.path.exists(f) for f in expected_files)
+        if all_exist:
+            print(f"✅ All data files already exist for {date_range['since']} - skipping download")
+            return {
+                'ad_overview': expected_files[0],
+                'age': expected_files[1],
+                'gender': expected_files[2],
+                'placement': expected_files[3]
+            }
         
         reports = {}
         
