@@ -1,7 +1,7 @@
 # Environment variables
 .env
 
-# Data and analysis are now committed for historical tracking
+# Data, analysis, and comparisons are committed for historical tracking
 
 # Python
 __pycache__/
