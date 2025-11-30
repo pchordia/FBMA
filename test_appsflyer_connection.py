@@ -70,3 +70,5 @@ print("1. App ID in AppsFlyer dashboard (Settings → My Apps)")
 print("2. API token has 'Reports' or 'Aggregate Pull' permissions")
 print("3. Token is a V2 token (Bearer format)")
 
+
+

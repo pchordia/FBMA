@@ -23,35 +23,36 @@ class AppsFlyerDataDownloader:
         if not self.app_id:
             raise Exception("APPSFLYER_APP_ID not found. Pass as parameter or set in .env")
         
-        self.base_url = "https://hq1.appsflyer.com/api/aggregate-data/app"
+        self.base_url = "https://hq1.appsflyer.com/api/agg/v2/data/app"
     
-    def get_partners_by_date(self, from_date, to_date, media_source='facebook'):
+    def get_partners_daily_data(self, from_date, to_date, media_source='facebook'):
         """
-        Pull AppsFlyer Partners by Date report
+        Pull AppsFlyer Aggregate Data - Partners Daily report
         
         Args:
             from_date: 'YYYY-MM-DD'
             to_date: 'YYYY-MM-DD'
             media_source: 'facebook' or specific partner
         """
-        endpoint = f"{self.base_url}/{self.app_id}/partners-by-date-report/v5"
+        # Aggregate Pull API V2 endpoint
+        endpoint = f"{self.base_url}/{self.app_id}"
         
         headers = {
-            'Authorization': f'Bearer {self.api_key}',
-            'Accept': 'text/csv'  # Request CSV format
+            'Authorization': f'Bearer {self.api_key}',  # V2 bearer token
+            'Accept': 'text/csv'
         }
         
         params = {
             'from': from_date,
             'to': to_date,
             'media_source': media_source,
+            'groupings': 'media_source,campaign,adset,ad',  # Campaign/adset/ad level
+            'kpis': 'installs,clicks,impressions,cost,sessions,loyal_users,total_revenue,arpu',
             'timezone': 'America/Los_Angeles',
             'maximum_rows': 100000,
-            # Request campaign/adset/ad level breakdown
-            'groupings': 'pid,c,af_c_id,af_adset_id,af_ad_id'
         }
         
-        print(f"Fetching AppsFlyer data: {from_date} to {to_date}")
+        print(f"Fetching AppsFlyer aggregate data: {from_date} to {to_date}")
         print(f"  Media Source: {media_source}")
         print(f"  Groupings: campaign, adset, ad level")
         
@@ -114,8 +115,8 @@ class AppsFlyerDataDownloader:
         print(f"📊 Downloading AppsFlyer Data for {date_str}")
         print("=" * 80)
         
-        # Download data
-        data = self.get_partners_by_date(
+        # Download aggregate partners data
+        data = self.get_partners_daily_data(
             from_date=date_str,
             to_date=date_str,
             media_source='facebook'

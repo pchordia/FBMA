@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "appsflyer": {
+      "url": "https://mcp.appsflyer.com/auth/mcp"
+    }
+  }
+}
