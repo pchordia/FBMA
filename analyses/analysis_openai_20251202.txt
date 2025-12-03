@@ -1,0 +1,160 @@
+Facebook Ads Analysis (OpenAI GPT) - 20251202
+================================================================================
+
+### 1️⃣ Overall Performance (Last 7 Days)
+
+**High level:**  
+- App is now clearly being driven by **rap avatar performance**, with **female rap & “Eddie/Morgan” male concepts as the workhorses.**  
+- **CPT trend (very roughly):**  
+  - **Nov 26–28:** lots of exploration, many Purchase campaigns at **$20–40+ CPT**.  
+  - **Nov 29–Dec 1:** consolidation; more assets in the **$15–25 CPT** band.  
+  - **Dec 2:** several Start Trial adsets are consistently in the **$8–18 CPT** range with solid volume.
+
+**Directional daily CPT trend (Start‑Trial focused)**
+
+> Nov 26–27: mostly $20–40 CPT  
+> Nov 28–30: $15–30 CPT (female rap & Eddie/Morgan pull averages down)  
+> Dec 1–2: **$8–20 CPT**, led by **female rap + Eddie/Morgan + Asian/Black baby**
+
+You’re clearly **moving from “test + learn” to a real performance baseline** over the last 3–4 days. The big question now is: **how fast can we rotate budgets into the proven clusters** without breaking them?
+
+---
+
+### 2️⃣ 🏆 What’s Working (Core + Promising)
+
+#### 2.1 Core Scale Creatives (Real spend + solid CPT)
+
+> Focus: **StartTrial & high‑intent Purchase** campaigns with CPT ≤ ~$20 and meaningful 7‑day spend.
+
+| Ad / Concept | Cluster / Campaigns | Evidence (last 2–4 days) | Funnel Notes |
+|--------------|---------------------|---------------------------|--------------|
+| **“06 fbg og” – female rap**<br>(`06 fbg og` + copies in Purchase + Rap_StartTrial_female + Install tests) | **Female Rap Hero** | Multiple days with **start_trial CPT ~\$8–16** (Rap_StartTrial_female) and **strong Purchase ROAS signaling**. CTR ~1.5–2%, CPI ~\$1.3–1.8. | Very healthy **CTR (1.5–2.0%)**, **CPC \$1.2–1.8**, CPIs ~\$3–5 in purchase, **good install→trial conversion**. This is now a **core evergreen pillar.** |
+| **“07 black_4” – female rap** | Female Rap Support | In Rap_StartTrial_female: **CPT ~\$6–10** on Dec 1–2, with CPIs \$2–5. In Purchase_female: CPT generally **low‑teens to low‑20s** on higher spend. | Slightly weaker CTR vs 06 fbg, but **excellent install→trial**. Great “second pillar” under female rap. |
+| **“12 Prerna” – female rap** | Female Rap Support / High‑LTV | In StartTrial_female: **CPT ~\$8–16** (Dec 1–2). In Purchase_female, consistently delivering **trials in the low‑teens** (with some days of very strong purchase CPA). | CTR ~1.4–1.8%, CPC ~\$1.3–1.7, CPIs ~\$3–4. Keeps showing up with **solid back‑end**; belongs in core, but not quite as cheap as 06 fbg. |
+| **“02 Eddie_Snoop” – male rap set2** (`02 Eddie_Snoop` + copies) | Male Rap / Eddie & Morgan | Across Install + Rap_StartTrial_set2: **CPT typically \$10–20**, strong CTR (2–2.5%), CPC \$0.4–0.9, CPIs ~\$1.5–3. | One of the best **front‑end machines**: high CTR, cheap clicks, and decent trial rate. Pairs very well with “Morgan_Gin” for diversification. |
+| **“04 Morgan_Gin” – male rap set2** | Male Rap / Eddie & Morgan | In Install + Rap_StartTrial_set2: **CPT often in \$11–20 band**, strong CTR (~2.2%), CPC \$0.45–0.9, CPIs around \$1–2. | Very stable performer across days; **high volume + good economics.** Should be treated as **core** with Eddie. |
+| **“10 Asian baby – Copy”** | Baby Cluster – Install & StartTrial | In Install (rap_baby) and StartTrial: repeated days with **CPT \$12–20**, CTR 1.6–2.0%, CPC ~\$0.6–0.75, CPIs ~\$1.5–2.5. | Baby creative has **real legs**; especially the Asian baby variant. Feels like a **third cluster** worth maintaining. |
+
+#### 2.2 Promising Low‑Spend Tests (Need more budget)
+
+These look very good but don’t yet have “real” spend:
+
+| Ad | Cluster | Latest Signal | Why It’s Interesting |
+|----|---------|---------------|----------------------|
+| **tyson_rap_2_4x5 – StartTrial** | Male Rap Set1 | Dec 2: **CPT ~\$10**, CTR 2.3%, CPC ~\$1.5 on small \$19 spend. Prior days also decent. | Strong **hook + male persona**. Looks like a nice complement to female rap if we can scale cautiously. |
+| **Subtitled “jesus_rap_1_4x5_subtitles” in StartTrial** | Experiment | Micro‑spend but when it does get clicks, **CPT can be ok (\$10–30)** and CTR >3% some days. | Might be worth **one clean dedicated test** (single ad, capped budget) to see if subtitles genuinely help or just add CPM bloat. |
+| **Female “Big Energy / WAP / I Like It” install creatives (black bodysuit / green hair / red pants, etc.)** | New Audio / Aesthetic | Across creative test campaigns, many of these sit at **CTR 2.5–3.5%, CPC \$0.3–0.6, CPIs \$1–2** with no trial optimization yet. | **Huge front‑end efficiency.** These should be **ported into StartTrial/Purchase campaigns** as new concepts – they’re outperforming legacy front‑end on click metrics. |
+
+---
+
+### 3️⃣ 🚧 What’s Not Working (Where We’re Bleeding)
+
+Focus on ads with **non‑trivial spend + weak CPT** or clearly broken funnel stages.
+
+#### 3.1 Underperformers with Real Spend
+
+| Creative / Cluster | Issue | Evidence / CPT | Recommendation |
+|--------------------|-------|----------------|----------------|
+| **Older male Purchase creatives: `jesus_rap_1_4x5 - Copy` & `tyson_rap_2_4x5 - Copy` in Purchase_rap_221125** | **High CPT + rising CPMs** | Repeated days with **start_trial CPT \$20–40+** and CPC \$2–4. | **Down‑weight / consolidate** into best performing ad or migrate budget into StartTrial variants. Keep 1–2 for structure; cut the rest. |
+| **Purchase Baby: `11 black baby` (purchase adset)** | Weak economics vs baby install/startTrial | Multiple days with **CPT \$20–45**, CPC ~\$2.0–3.2, CPIs very high. | **Pause or sharply cap.** Let baby volume come from **Install/StartTrial baby adsets**, where costs are 30–50% lower. |
+| **Misc celebrity experiments (`Lebrone`, `Curry`, `Santa`, `Esha` etc. in Purchase & StartTrial)** | No trials, random spend | Many of these run **\$10–50+ with 0 trials** and average/bad CTR. | Treat as **archived experiments**. Pause, only re‑introduce via structured creative test adsets with strict spend caps. |
+| **Subtitles variants at scale (`tyson_rap_2_4x5_subtitles`, etc.)** | High CPM, low volume | CPMs often **30–50%+ above base** with **no corresponding lift**, and almost no installs. | Unless we want them for UX/branding, **pause & re‑test later** in a small A/B. Not worth keeping in main SKUs right now. |
+
+#### 3.2 Funnel Breaks
+
+- **Purchase campaigns in general**  
+  - CTR and CPC are **fine to good**, but **install→trial is where many break** (e.g. \$2–4 CPIs turning into \$25–40 CPT).  
+  - Compared with StartTrial campaigns, Purchase looks **less efficient for the primary CPT KPI**, even if they contribute revenue.
+  - Suggestion: **use Purchase more as “LTV/ROAS layer”** on top of proven creatives, but let **StartTrial drive most scale decisions.**
+
+- **Some StartTrial male Set1 ads** (`jesus_rap_1_4x5` in Rap_StartTrial_set1):  
+  - Front‑end ok (CTR ~1–1.1%, CPC \$2.3–2.6), **but CPT widely swings \$20–50+**.
+  - vs. female rap / Eddie&Morgan where CPT is tighter in \$8–20.
+
+---
+
+### 4️⃣ 📉 Notable Changes & Swings
+
+1. **Female rap became the clear hero cluster mid‑week.**  
+   - From Nov 28 onward, **06 fbg og / 07 black_4 / 12 Prerna** start consistently beating most male assets on CPT, and by Dec 1–2 they’re carrying a lot of the StartTrial performance.
+
+2. **Eddie & Morgan set2 moved from “test” to “core.”**  
+   - Early in the week they’re just install experiments; by Dec 1–2, they’re **scaled in Rap_StartTrial_set2**, holding CPT in a decent \$11–20 range with stellar CTR.
+
+3. **Baby cluster stabilized.**  
+   - Initially noisy CPT in Purchase_baby; by later in the week, performance from **`10 Asian baby - Copy` in Install/StartTrial** is much more **predictable and efficient**, suggesting we should lean on that structure.
+
+4. **Subtitled variants consistently under‑delivered.**  
+   - Across the week, they show **higher CPMs**, modest engagement, **almost no installs and very few trials.** The experiment doesn’t look promising at scale.
+
+5. **Creative test campaigns (BigEnergy/WAP/ILike It/G Thang) quietly crushed the front‑end.**  
+   - Many of these tests have **CTR 2.5–3.5% and CPC \$0.3–0.6** with clean funnels to install. We just haven’t yet plugged them into StartTrial/Purchase to see the CPT impact.
+
+---
+
+### 5️⃣ ❓ Questions & Hypotheses → Next Tests
+
+Here’s what I’d want to dig into / test next, based on the last 7 days.
+
+#### 5.1 Female Rap Scaling & Structure
+
+- **Q:** Are we over‑fragmenting female rap budget across too many similar variants (06, 07, 12, etc.)?  
+  **Hypothesis:** Fewer, stronger adsets with just **top 2–3 creatives per cluster** will reduce volatility and improve CPT.
+
+  → **Test:**  
+  - Create **one consolidated StartTrial_female adset** with **06 fbg og + 07 black_4 + 12 Prerna** only.  
+  - Turn off weaker female variants inside StartTrial & Purchase for 48–72h and compare CPT vs current mixed stack.
+
+#### 5.2 Front‑End Monsters → StartTrial
+
+- **Q:** Can BigEnergy / WAP / I Like It / G‑Thang female tests maintain their killer CTR when optimized for StartTrial?  
+  **Hypothesis:** These songs + avatar looks will **match or beat** current female rap CPT once moved into the trial objective.
+
+  → **Test:**  
+  - Pick **top 3–4 install creatives** by **CPC + install rate** (e.g., black bodysuit, green hair, red pants).  
+  - Launch a small **StartTrial adset** with **\$100/day cap**, same audiences as main rap StartTrial, and compare front‑end and CPT vs 06/07/12.
+
+#### 5.3 Purchase vs StartTrial Mix
+
+- **Q:** Are Purchase campaigns adding incremental value or just paying more for the same trials?  
+  **Hypothesis:** For now, **StartTrial gives cheaper trials**, and Purchase should be treated as a **ROAS layer** only for the very top creatives.
+
+  → **Test:**  
+  - **Freeze new creative rotation** in Purchase; only run **top female 06/07/12 + Eddie/Morgan**.  
+  - Track **trials & purchases by entry campaign** (Post‑ID or internal mapping) for 3–5 days to see if Purchase brings **unique high‑LTV users** or overlaps heavily with StartTrial.
+
+#### 5.4 Baby Strategy
+
+- **Q:** Should baby concepts be a mainline strategy or just a diversification layer?  
+  **Hypothesis:** **Asian baby** is good; **black baby in Purchase** is too expensive.
+
+  → **Test:**  
+  - Move baby spend primarily into **Install + StartTrial baby** adsets with **top 1–2 creatives** (`10 Asian baby - Copy`, plus best black baby copy).  
+  - Cap or pause **Purchase_baby** until we see stable CPT in the lower structures.
+
+#### 5.5 Subtitles & Accessibility
+
+- **Q:** Do subtitles actually help certain cohorts (e.g. silent autoplay, non‑native speakers), or just drive CPM up?  
+  **Hypothesis:** On current hooks/subtitles style, **they’re net negative**.
+
+  → **Test:**  
+  - Run a **clean A/B**: 1 best‑performing base video vs **same video subtitled**, in a **single StartTrial adset** with split‑test, tiny budget (\$50–100/day).  
+  - If subtitled loses again, park the idea until we redesign the subtitle style.
+
+---
+
+### 6️⃣ TL;DR Priorities for This Week
+
+1. **Consolidate and scale**:  
+   - Make **female rap (06/07/12) + Eddie/Morgan set2 + Asian baby** the **budget priority.**
+
+2. **Trim the fat**:  
+   - Systematically **pause low‑volume, zero‑trial celebrity and subtitle variants** in Purchase and StartTrial.
+
+3. **Promote front‑end test winners**:  
+   - Move **BigEnergy/WAP/ILike It/G‑Thang** winners into **StartTrial** to see actual CPT.
+
+4. **Re‑balance Purchase vs StartTrial**:  
+   - Let **StartTrial performance dictate scale**, keep Purchase lean with only the absolute top SKUs.
+
+If you’d like, next step could be a **tight short‑list of exactly which ad IDs to keep/live vs pause** by campaign, with a simple “turn this off / leave this on” plan.
