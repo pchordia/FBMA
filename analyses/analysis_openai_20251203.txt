@@ -1,0 +1,152 @@
+Facebook Ads Analysis (OpenAI GPT) - 20251203
+================================================================================
+
+### 1️⃣ Overall Performance (Last 7 Days)  
+
+**High level**  
+- Rough 7‑day spend: **≈ $12–15K** across Install + Start Trial + Purchase campaigns.  
+- Trials (from `start_trial_*` + subscribe proxies): **low hundreds**; blended **CPT mostly in the \$10–\$25 band**, with best clusters in low‑teens.  
+- Trend by period (using start‑trial CPAs where available):  
+
+> **Early period (Nov 27–29)**  
+> - Start‑Trial (male rap set1): **\$15–\$30 CPT**, noisy by day.  
+> - Female rap tests just spinning up; limited trial volume, high CPMs.  
+>   
+> **Mid period (Nov 30–Dec 1)**  
+> - Male **Jesus/Tyson** Start‑Trial stabilizing around **\$10–\$20 CPT** on solid spend.  
+> - First female rap Start‑Trial_female campaigns show **\$15–25 CPT** but with excellent CTR/CPI.  
+>   
+> **Latest (Dec 2–3)**  
+> - **Female Start‑Trial_female set**: multiple creatives at **\$8–\$16 CPT** (e.g. FBG OG, Black_4, Prerna copies).  
+> - Male Start‑Trial_set1 still strong (**\$9–\$20**), but female cluster now matches or beats it on trial cost with **better CTR and room to scale**.  
+> - Install‑only creative tests (Big Energy / WAP / GThang / Gospel) are feeding very cheap installs (CPI often **\$1–\$2**) but still thin on trial data.
+
+**Big picture:**  
+- **Core rap male ads (Jesus/Tyson)** + **female rap cluster (FBG OG / Black_4 / Prerna)** are now the **reliable engines** for both installs and trials.  
+- **Baby avatars** and **new song packs (Big Energy, WAP, G Thang, Gospel)** are delivering **great top‑of‑funnel** but **mixed trial efficiency** so far.  
+
+---
+
+### 2️⃣ 🏆 What’s Working (Core Scale + Promising Tests)
+
+#### 2.1 Core Scale Creatives (meaningful spend + good CPT)
+
+| Cluster / Creative                                         | Campaign / Set                               | 7d Spend* | CTR | CPI (CPA omni_install) | CPT (Start Trial / Subscribe) | Notes |
+|-----------------------------------------------------------|----------------------------------------------|-----------|-----|------------------------|-------------------------------|------|
+| **Jesus_rap_1_4x5 (male)**                                | `FB_iOS_Rap_StartTrial_set1` + Install set1 | High 3–4 figs | ~0.9–1.3% | **\$1.4–2.2** | **\$9–\$26** per day (mid‑teens blended) | Very consistent; high video engagement; still a **core scale asset**. |
+| **Tyson_rap_2_4x5 (male)**                                | `Rap_StartTrial_set1` + Purchase + Install   | High 3 figs | ~1.0–1.7% | **\$1.4–2.8** | **\$12–\$30 CPT** (wider variance) | Slightly worse ITR than Jesus but strong CTR; worth keeping in rotation with guardrails. |
+| **06 FBG OG – female rap (all variants: OG / Copy / Copy 2)** | `Rap_StartTrial_female_281125` + Install tests | **\$300–400+** across days | **1.5–1.8%** | **\$2.5–3.5** | **\$8–\$16 CPT** on best Start‑Trial_female days | **Female OG avatar is now clearly a core trial driver**; strong watch‑through and stable CPAs. |
+| **07 Black_4 – female**                                   | `Purchase_rap_female_261125` + `StartTrial_female` | Mid 3 figs | 1.4–1.9% | **\$3–4.5** | **\$9–\$22 CPT** depending on day | Slightly more expensive CPI than OG, but holds up on trial and purchase CPAs; good secondary scale. |
+| **12 Prerna – female**                                    | `Purchase_rap_female` + `StartTrial_female` | **\$500+** total | ~1.3–1.6% | **\$4–5.5** | **\$12–\$25 CPT** | Solid workhorse; slightly heavier CPI but decent downstream. Good for **depth & stability**. |
+| **10 Asian baby – Copy (baby avatar)**                    | `itoshi_rap_baby` (Install)                  | High 2–3 figs | **1.6–1.9%** | **\$1.5–1.8** | **\$15–\$25 CPT** (when measured) | **Cheap installs & strong CTR**; weaker install‑to‑trial vs female rap, but still profitable-ish. |
+| **02 Eddie_Snoop – Copy (male)**                          | `Rap_StartTrial_set2` + Purchase/Install     | **\$200–300** | ~1.4–2.2% | **\$3–3.6** | **\$18–\$23 CPT** (Start‑Trial_set2) | Strong performer in the **secondary StartTrial_set2**; good to keep but not as efficient as female cluster. |
+
+\*Spend ranges are directional across 7 days based on multiple rows.
+
+**Patterns among winners**
+
+- **Visual / character:**  
+  - **Female avatars (Black_4, FBG OG, Prerna)** are now clearly **top‑tier**: strong CTR, view‑through, and equal or better CPT vs male rap.  
+  - **Baby avatars** grab attention cheaply but drop off in ITR → trial vs rap/female creatives.
+
+- **Songs / framing:**  
+  - The **classic rap tracks (Gin & Juice style “Morgan_Gin”, “FBG OG”)** and **Jesus/Tyson bars** continue to outperform new songs when optimizing to trial.  
+  - New packs (Big Energy, WAP, G Thang, Gospel) are **great for install tests** but still unproven at the trial step.
+
+---
+
+#### 2.2 Promising Low‑Spend Tests (Scale Candidates)
+
+| Creative / Theme                                  | Campaign / Set                           | Spend (7d) | CPI | Early CPT Signal | Why it’s interesting / Next step |
+|---------------------------------------------------|------------------------------------------|------------|-----|------------------|----------------------------------|
+| **03_blackbodysuit_Big energy**                   | `FB_iOS_Install_Rap_CreativeTest_251202` | \$50–60    | **\$1.3–1.4** | Few subs at **\$40–45** CPA | **Very strong CTR (2.5–2.8%) & CPIs**. Push into **StartTrial_female** with capped budgets. |
+| **04_MorganF_Nuthin But A G Thang**               | `Test_F_GThang` (Install)                | \$120–130  | **~\$1.1–1.4** | Purchase/subscribe **\$40–90** CPA | Creative is sticky; try **trial‑optimized ad sets** (female rap) and compare CPT vs core female cluster. |
+| **02_blackNew_Wap 1 / Wap 2**                     | `Test_F_Wap1/2` (Install)                | Low–mid 2 figs each | **\$1.2–1.4** | No clear trial data yet | CTR 2–3%, strong install economics. **Lift top 1–2 variants** into StartTrial_female. |
+| **Nose‑ring / Red dress variants (Big Energy / I Like It / WAP)** | Various female creative‑test ad sets     | \$20–60 ea | **\$1.7–2.3** | Occasional cheap installs & 1–2 trials | Good **creative directions (accessories, bold colors)**. Use these traits in new edits of winner avatars rather than scaling raw tests. |
+| **Gospel / Singing (Eddie_tsong, Lebron_tsong, Rock_Thong Song)** | `Gospel_Singing_251203` (Install)        | \$60–80    | **\$1.3–2.0** | Only a handful of installs → trials yet | Interesting *theme* with high CTR (3%+). Worth a **structured StartTrial test** with 1–2 best characters instead of wide spread. |
+
+---
+
+### 3️⃣ 🚧 What’s Not Working / Likely Waste
+
+#### 3.1 Creatives with Meaningful Spend & Weak CPT
+
+| Creative / Cluster                             | Where running                        | Main Issue             | CPT / Proxy             | Recommendation |
+|-----------------------------------------------|--------------------------------------|------------------------|-------------------------|----------------|
+| **Male StartTrial_set2 (Eddie_Snoop + long tail)** | `FB_iOS_Rap_StartTrial_set2_281125` | **CPT drifting into mid‑20s**; CPIs ~\$3–4 | Start‑trial CPAs **\$18–\$25+** | Keep **Eddie_Snoop**; **tighten budgets / bids** on other set2 variants or fold them into set1/female. |
+| **Subtitles variants (Jesus/Tyson_subtitles)** | StartTrial_set1 + Install set1       | **High CPM & low CTR**, very few trials | Essentially **no scale; CPT undefined or huge** | **Pause all subtitle cuts**; they’re clearly worse than the original edits. |
+| **Some female experimentals (aiartist3, blonde variants in StartTrial_female)** | `Rap_StartTrial_female_281125`       | **CPM 40–100+** & 0–1 clicks | No trial data; CPC in \$1–3+ range | Treat as **R&D only**; cap at very low budgets or park in a sandbox campaign, don’t let them sit in main trial sets. |
+| **Black baby purchase set** (`FB_iOS_Purchase_itoshi_rap_baby_261125`) | Purchase campaign                     | Good CTR, but **trial/purchase CPAs $25–60** | Start‑trial proxies **\$20–\$50** | Use babies primarily as **install drivers**, not purchase optimized; keep purchase budget small. |
+| **Low‑volume WAP2/WAP1 long tail (most outfit variants)** | `Test_F_Wap1/2`                       | Many creatives with **spend \$5–20 and 0 clicks/trials** | No signal yet, but clearly weaker vs top WAP variants | **Aggressively prune**: keep only 1–2 top performers per pack (e.g. `02_blackNew`) and cut the rest. |
+
+#### 3.2 Funnel Breakpoints
+
+- **High CTR / low CPI but weak ITR → Trial:**  
+  - **Baby avatars:** 10 Asian baby & 11 black baby often show **CTR 1.5–2% and CPI ~\$1.5**, but when trial data exists, **CPT is in \$15–\$25+ range**, notably worse than female rap.  
+  - Hypothesis: users love watching/clicking babies but **don’t see themselves using the product from that angle** → mis‑matched intent near paywall.
+
+- **Good installs but expensive trials on some female tests:**  
+  - A few **blonde / aiartist3** variants get okay CPIs, but **no trials at \$20–\$60 of spend** → likely **visual miss** vs winning female archetypes.
+
+---
+
+### 4️⃣ 🔄 Notable Changes & Swings
+
+- **Female rap avatars have “graduated” from test to core scale.**  
+  - Over last 3 days, **FBG OG / Black_4 / Prerna** copies in `Rap_StartTrial_female` are matching or beating the OG male set with **CPT often in single digits–low teens** and **great CTR (1.5–1.8%)**.
+
+- **StartTrial_set2 feels like the “B‑team”** vs set1 + female.  
+  - Performance is OK but trial CPAs tend to land **5–10 dollars higher** than best male/female assets. Useful for incremental volume, not for aggressive scaling.
+
+- **Big Energy / WAP / G Thang tests proved creative directions, not standalone winners (yet).**  
+  - **Fantastic CPIs** and engagement, but **trial/purchase data is still thin or expensive**. These are **ripe for porting the *visual style* into known high‑intent structures (rap / female avatars)**.
+
+- **Subtitles & some experimental faces are clearly underperforming.**  
+  - Across multiple days, **subtitled cuts, “aiartist3”, and several blonde tests** run at **higher CPMs, worse CTR, and zero meaningful conversions**.
+
+- **No major frequency‑driven fatigue yet.**  
+  - Even biggest winners (e.g. `06 fbg og - Copy`, `Jesus_rap_1_4x5`) sit around **freq ~1.0–1.1 over 7 days**; **room to push harder** before rotating.
+
+---
+
+### 5️⃣ ❓ Questions & Hypotheses → Next Tests
+
+1. **Female vs Male Lead for Scaling**
+   - **Question:** If we let the algo choose between male and female rap creatives in the same StartTrial campaign, which wins?  
+   - **Test:** Create a **consolidated “rap avatars” StartTrial campaign** with only proven winners: `Jesus_rap_1`, `Tyson_rap_2`, `06 FBG OG`, `07 Black_4`, `12 Prerna`. Use broad targeting + value or trial optimization; watch budget distribution and blended CPT.
+
+2. **Refining the Baby Avatar Strategy**
+   - **Question:** Are baby avatars inherently weaker on ITR, or is it the **landing/promo mismatch**?  
+   - **Test:**  
+     - a) Run a **StartTrial_baby** ad set isolating `10 Asian baby – Copy` & best black baby, with **dedicated baby‑themed store / onboarding**.  
+     - b) Compare **install→trial rate** vs female & male sets to confirm whether the issue is creative or post‑click.
+
+3. **Porting Best Visuals into High‑Intent Structures**
+   - **Question:** Can we take **BigEnergy / WAP / G Thang looks** and wrap them in our **proven rap flows** to get both high CTR and strong ITR?  
+   - **Test:**  
+     - Build new **female rap edits using Big Energy/WAP styling** (poses, outfits, camera moves) but with **rap‑style hooks and copy**.  
+     - Drop them directly into **StartTrial_female** and **StartTrial_rap** with a small budget + clear kill rules.
+
+4. **Tightening Creative Hygiene in Test Campaigns**
+   - **Question:** How much spend is being lost to **low‑signal long tail (esp. WAP/BigEnergy variants)**?  
+   - **Test:** Institute a **hard kill rule** in test campaigns:  
+     - e.g., *“Pause at \$20 spend if no install, or \$40 if no trial”* and **limit to 3–5 variants per theme** at any given time.
+
+5. **Paywall / Messaging Experiment for High‑CTR Clusters**
+   - **Question:** Are some creatives (e.g., Gospel/Singing, Big Energy) attracting **different intent segments** who need tailored messaging to convert?  
+   - **Test:**  
+     - Create **variant paywall/copy** or **in‑ad CTA** specifically for **singing / gospel / dancing** angles and compare ITR & CPT vs generic flow.
+
+---
+
+### 6️⃣ 📌 Recommended Focus (Short Version)
+
+- **Scale hard & clean around winners:**
+  - Male: **Jesus_rap_1 + Tyson_rap_2** in StartTrial_set1.  
+  - Female: **FBG OG, Black_4, Prerna** in `Rap_StartTrial_female`.  
+- **Use baby avatars and new song packs as feeders:**
+  - Keep them as **high‑CTR, low CPI install drivers**, and selectively promote top variants into trial campaigns.  
+- **Aggressively prune:**
+  - Subtitles, experimental faces (aiartist3, many blondes), and low‑volume WAP/BigEnergy variants with **no results after \$20–40**.
+
+If you’d like, next step I can pull **cluster‑level 7‑day numbers (spend / installs / trials / CPT)** for just the **top 10 creatives** and lay them out as a more formal performance table for decision‑making.
