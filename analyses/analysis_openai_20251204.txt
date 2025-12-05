@@ -1,0 +1,184 @@
+Facebook Ads Analysis (OpenAI GPT) - 20251204
+================================================================================
+
+### 1️⃣ Overall Performance (Last 7 Days)  
+
+**High‑level:**  
+- **Acquisition is strong and stable.** CTRs and CPIs on our core rap install/baby/female ads are very healthy (CPI ≈ **$1–2**).  
+- **Cost per trial/purchase is where volatility lives.** Female purchase/WAP/Big Energy tests have driven CPTs from **teens → $30–$90+** in several cases.  
+- **Spend is concentrated** in a few hero creatives/clusters:  
+  - Male rap install (Jesus/Tyson/Morgan)  
+  - Female rap install (06 fbg og, 07 black_4)  
+  - Baby avatars (10 Asian baby / 11 black baby)  
+  - Female music-track tests (Big Energy, WAP1/2, G Thang)  
+  - Rap StartTrial Set1/Set2  
+
+**Directional CPT trend (purchase/start-trial campaigns):**  
+- **Early period (Nov 28–30):**  
+  - 06 fbg og (female purchase): **~$17–25 CPT**  
+  - 12 Prerna (female purchase): **~$9–18 CPT**  
+  - Rap StartTrial heroes (Morgan/Eddie): **~$10–20 CPT**  
+- **Last 48–72h (Dec 2–4):**  
+  - 06 fbg og (female purchase): **mid‑30s to ~$50 CPT**  
+  - 12 Prerna: spiked **$60+** on Dec 2, down to **low‑30s** on Dec 4  
+  - WAP/Big Energy/G Thang purchase tests: mostly **$40–$90+ CPT**  
+  - StartTrial (Morgan/Eddie/06 fbg og): still generally **low‑ to mid‑teens**  
+
+**Takeaway:** Acquisition machine is humming; **incremental $$$ is now mostly a CPT optimization problem** (where we point purchase/StartTrial budgets).
+
+---
+
+### 2️⃣ 🏆 What’s Working  
+
+#### 2.1 Core Scale Creatives (Real Spend + Good Economics)  
+
+**Top-performing install/StartTrial ads – last 1–2 days snapshot**
+
+| Ad / Creative | Objective / Cluster | Spend (daily) | CTR | CPC | CPI (cpa_omni_app_install) | Trial/Purchase CPT* | Notes |
+|---|---|---|---|---|---|---|---|
+| **06 fbg og – Copy (female rap)** `6916177886184` | **Install – Rap Female** | **$80–90 /day** | **2.5%** | **$0.43** | **$1.24** | N/A (install only here) | Absolute workhorse for female rap. Great CTR & CPI, huge volume. Use as *creative spine* across objectives. |
+| **04 Morgan_Gin (rap)** `6916864174784` | **Install – Rap Male** | **$80–100 /day** | **2.4%** | **$0.38** | **$1.5** | N/A | Long‑running hero. Still very efficient, no obvious fatigue yet. |
+| **10 Asian baby – Copy** `6916177448584` | **Install – Rap Baby** | **$45–50 /day** | **1.7–1.8%** | ~$0.60 | **$1.6–1.7** | N/A | Baby avatar angle is a legit performer. Strong engagement and cheap installs. |
+| **Jesus rap 1 4x5** `6913358815984` | **Install – Rap Male (Set1)** | **$80–90 /day** | ~1.3% | ~$0.68 | **$1.4–1.7** | N/A | Still a backbone of iOS rap UA. Solid, consistent. |
+| **Tyson rap 2 4x5** `6913358397984` | **Install – Rap Male (Set1)** | Med (~$20/day) | ~1.4–1.6% | ~$0.7 | **$1.4–1.8** | N/A | Reliable secondary asset in the same cluster. |
+| **06 fbg og – Copy 2** `6917505479784` | **StartTrial – Rap Female** | **$80–100 /day** | ~1.4–1.8% | ~$1.3–1.5 | **$2.7–3.5** | **CPT ≈ $8–16** | Very promising StartTrial unit. CPT mostly in teens; strong candidate for more budget. |
+| **04 Morgan_Gin – Copy** `6917461954984` | **StartTrial – Rap Male (Set2)** | **$60–80 /day** | ~1.8–2.1% | ~$1.0–1.2 | **$3–4** | **CPT ≈ $15–22** (improving vs Nov) | CPT trended from mid‑40s (Nov) → mid‑teens/20s (Dec). Good scale + improving efficiency. |
+| **Jesus/Tyson StartTrial Set1** `6915585772784 / 3184` | **StartTrial – Rap Male (Set1)** | Med (~$40–60/day combined) | ~0.9–1.5% | ~$2.1–2.6 | **$4–8** | **CPT ≈ $18–26** | Solid baseline StartTrial performance; not as good as Set2 but dependable. |
+
+\*CPT based on `subscribe`/`start_trial` cost_per_conversion where present; ranges are across the week.
+
+#### 2.2 New Creative Themes Showing Strong Acquisition  
+
+These don’t yet have clean trial data but are **install monsters**:
+
+| Creative | Cluster | CTR | CPC | CPI | Note |
+|---|---|---|---|---|---|
+| **03_blackbodysuit_Big Energy** `6920199460384` | **Female – Big Energy track** | **2.7–2.9%** | **$0.37–0.45** | **$1.2–1.3** | Very strong click and install economics. Purchase CPT currently high (see “Not Working”) but this is a **great hook** for install/StartTrial. |
+| **02_blackNew_Wap 2** `6920229519184` | **Female – WAP 2** | ~2.1–2.6% | ~$0.50 | **$1.3–1.4** | Similar story: very healthy top‑funnel, perfect for StartTrial testing. |
+| **04_MorganF_Nuthin But A G Thang** `6920251011584` | **Female – G Thang track** | **3.0–3.4%** | **$0.28–0.33** | **~$1.1** | One of the best CTR/CPC combos in the account. Purchase CPA is rough, but as raw UA asset this is gold. |
+| **01_Eddie_tsong / 03_lebron_tsong** `6920980158184 / 6920985136984` | **Singing/Gospel test** | **3.0–3.5%** | **$0.30–0.47** | **$1–2** | New “singing” angle works: high engagement + cheap installs. Worth pushing to StartTrial. |
+
+**Summary pattern:**  
+- **Female performance with strong songs (Big Energy/WAP/G Thang) + bold avatars** is clearly resonating at the top of funnel.  
+- **Rap baby + female rap + Morgan_Gin** remain **evergreen workhorses** for installs.
+
+---
+
+### 3️⃣ ❌ What’s Not Working / Where We’re Bleeding  
+
+#### 3.1 High-Spend, Poor CPT (Purchase/Trial)  
+
+| Creative / Cluster | Issue | Example CPA (last days) | Why it’s a problem | Rec |
+|---|---|---|---|---|
+| **06 fbg og (female purchase)** `6916167127784` | **CPT inflation** | CPT: **$17 → $25 → mid‑30s → ~$50** (Nov 28 → Dec 3) | Same creative as our hero installer, but **purchase CPT has ~2–3x’d**. Likely fatigue + aggressive bids on a narrow audience. | **Cap / downweight** in purchase; lean on **StartTrial + install** versions. Refresh creative hook rather than brute‑forcing budget here. |
+| **12 Prerna (female purchase)** `6916168066184` | **Volatile & elevated CPT** | Early: **$9–18** → Dec 2 spike **$60+**, Dec 4 ~**$32** | Big part of purchase spend; still above early-week benchmarks and highly volatile day‑to‑day. | Keep live as a **secondary purchase asset**, but **tighten caps** and watch like a hawk. Prefer StartTrial + best WAP/BigEnergy purchase units for incremental budget. |
+| **03_blackbodysuit_Big Energy (purchase path)** `6920199460384` | **Great installs, weak monetization** | Purchase CPA **$40–$80+** | Killer UA asset, but **install→purchase conversion is weak**. CPT not competitive vs rap StartTrial heroes. | Use it for **install/StartTrial**, not purchase optimization. Pull back purchase budgets on this exact line item. |
+| **04_MorganF_Nuthin But A G Thang** `6920251011584` | **Very high purchase CPA** | ~**$80+** per sub | Same pattern: stellar click/install economics, but expensive subs. | Treat as a **scale install asset** only; don’t judge it by purchase performance yet. |
+| **02_blackNew_Wap 1 / Wap 2 purchase copies** `6920221871184, 6920996506984, 6920999337184…` | **Cluster-level CPT too high** | WAP 1/2 CPAs often **$50–$95+** | Across WAP purchase adsets, we’re consistently seeing **CPT worse than rap StartTrial**. | **Consolidate into 1–2 best‑performing WAP purchase ads**, pause the rest, and re‑test via StartTrial. |
+
+#### 3.2 Small-Spend but Clearly Bad  
+
+Patterns to deprioritize/kill quickly:  
+
+- **Subtitle variants** (`jesus_rap_1_4x5_subtitles`, `tyson_rap_2_4x5_subtitles`)  
+  - High CPM (**$30–70+**), low/no trials. No evidence they beat base cuts.  
+- **Edge characters with microscopic volume + insane CPMs** (e.g. some “anomansollips”, fringe blondes, niche G Thang / WAP 2 variants at **$50–$200 CPM**).  
+  - Noise; not worth further learning budget **until we have a specific hypothesis**.
+
+**Action:** treat these as **archive**: don’t spend optimization cycles here.
+
+---
+
+### 4️⃣ 📉 Funnel by Cluster – Where It Breaks  
+
+Approximate patterns from the last week:
+
+| Cluster | CTR | CPC | CPI | Install→Trial/Subscribe | Read |
+|---|---|---|---|---|---|
+| **Rap Male Install (Jesus/Tyson/Morgan)** | **1.3–2.4%** | **$0.4–0.7** | **$1.3–1.8** | Only monetized when pushed into purchase/StartTrial; decent when we do. | **Healthy top‑of‑funnel.** No urgency to change; mainly a question of where to point deeper-funnel budget. |
+| **Rap Baby (10 Asian baby, 11 black baby)** | **~1.6–1.9%** | **$0.6–0.7** | **$1.6–2.0** | Trials when tested are acceptable but sample sizes smaller. | **A/Bs well vs adult rap.** Room to lean in more for trials. |
+| **Rap Female Install (06 fbg og, 07 black_4)** | **2.0–2.8%** | **$0.43–0.7** | **$1.0–1.5** | When used in StartTrial: CPT **low‑ to mid‑teens**. Purchase CPT inflated as noted. | **One of our best levers.** Keep pushing installs/StartTrial, be stricter on purchase. |
+| **Female Big Energy / WAP / G Thang Install** | **2.1–3.4%** | **$0.3–0.8** | **$1.1–2.0** | Install→purchase currently poor (**$40–90+**), StartTrial not fully explored. | Big creative **win at UA level**, but **conversion issue past install**. Perfect candidates to funnel into StartTrial tests. |
+| **Rap StartTrial (Set1 & Set2)** | CTR similar to rap install (~1–2.5%) | **$1–2** | **$3–5** | CPT mostly **$10–25**, some improving over time. | **Best blend of volume & CPT** right now. Should be core for growth. |
+| **Female Purchase (Prerna / 06 fbg og)** | CTR strong | CPC ok | CPI ok | CPT drifted from **teens → 30–60+** | **Where most CPT pain lives.** |
+
+**Where funnel breaks most often:**  
+- **Female music-track purchases:** top‑funnel is 🔥, but **install→trial/purchase conversion lags**, producing high CPT.  
+- **Some female purchase units** (06 fbg og, Prerna) show clear **CPT inflation over time** – likely fatigue + overbidding on already-squeezed segments.
+
+---
+
+### 5️⃣ 🔄 Notable Changes & Swings  
+
+1. **06 fbg og purchase CPT has deteriorated meaningfully.**  
+   - From **~$17–25** per sub (Nov 28–30) to **mid‑30s / ~$50** by Dec 3.  
+   - Install metrics are still phenomenal → this is not a creative death, it’s a **“wrong optimization point”/fatigue story**.
+
+2. **12 Prerna had a big CPA spike and partial recovery.**  
+   - **Dec 2:** purchase CPA north of **$60**.  
+   - **Dec 4:** back to **~$32**, still ~2x early‑week levels.  
+   - Suggests **budget/auction instability**, not pure creative failure.
+
+3. **WAP / Big Energy / G Thang purchase test wave** ramped quickly.  
+   - Strong signals on **CTR/CPC/CPI**, but very **mixed subs**; some lines >**$80 CPA**.  
+   - This cluster is a **prime candidate for StartTrial restructuring**.
+
+4. **Rap StartTrial Set2 (Morgan_Gin/Eddie_Snoop)** is trending better.  
+   - CPT slid from **~$40+ → mid‑teens/20s** over the 7‑day window as the algo settled.  
+   - These are good homes for incremental performance dollars.
+
+5. **Singing/Gospel tests (“Thong Song”, “God’s Plan”, “Tsong”)**:  
+   - **Above‑average CTR and CPIs** on modest spend, with several variants showing CPIs around **$1–2**.  
+   - Early but promising new *angle* to diversify away from only rap.
+
+---
+
+### 6️⃣ ❓ Questions & Hypotheses / What to Test Next  
+
+**Q1. Can we get the same (or better) trials from female music-track creatives via StartTrial instead of Purchase?**  
+- **Hypothesis:** Purchase optimization is overfitting to a tiny high‑value audience, inflating CPT; StartTrial will stabilize and cheaper trials will backfill.  
+- **Test:**  
+  - Spin up **StartTrial campaigns** using **03_blackbodysuit_Big Energy, 02_blackNew_Wap1/2, 04_MorganF_G Thang** as creatives.  
+  - Mirror targeting from existing purchase campaigns.  
+  - Compare CPT vs current purchase lines over 3–4 days at meaningful spend.
+
+**Q2. Are we over‑exposing 06 fbg og and Prerna in purchase?**  
+- **Hypothesis:** Rising CPT is mainly **frequency + auction pressure** on too few purchase creatives.  
+- **Test:**  
+  - **Cap purchase frequency** (e.g. 2–3 / 7d) for these ads and **shift 20–30% of their budget** into:  
+    - Rap StartTrial Set2 (Morgan/Eddie)  
+    - New female StartTrial lines as above.  
+  - Watch CPT movement over 3 days.
+
+**Q3. Do baby avatars convert to trials as well as they convert to installs?**  
+- **Hypothesis:** Baby cluster (10 Asian baby / 11 black baby) has **room to become a core StartTrial engine**, not just an install workhorse.  
+- **Test:**  
+  - Create a dedicated **Rap_Baby_StartTrial** ad set using top baby creatives.  
+  - Compare CPT vs main rap StartTrial sets at equal budgets.
+
+**Q4. Is singing/Gospel a viable new vertical for trials?**  
+- **Hypothesis:** High engagement on “Thong Song” / “God’s Plan” / “Tsong” will translate to decent trials if optimized correctly.  
+- **Test:**  
+  - Promote the **best 1–2 singing creatives** into StartTrial optimization with modest budgets.  
+  - Monitor CPI and CPT; if CPT lands in the **$10–25 range**, this becomes a new scale pillar.
+
+**Q5. Are there clear winners inside Big Energy / WAP / G Thang that we should anoint as “only” purchase creatives?**  
+- **Hypothesis:** Within that noisy cluster, **1–2 creatives (e.g. 04_fbg_Wap1 Copy)** may be decent on CPT while others drag down averages.  
+- **Test:**  
+  - Run **side‑by‑side CPT comparison** of all purchase ads in that family at matched budgets.  
+  - **Kill or cap** anything consistently >**2x** the CPT of the best unit; move their spend into the winner and StartTrial tests.
+
+---
+
+### TL;DR – Where to Focus This Week  
+
+- **Double‑down on what’s clearly working for acquisition:**  
+  - Jesus/Tyson/Morgan rap, **06 fbg og (female)**, baby avatars, and the new **Big Energy/WAP/G Thang** install winners.  
+
+- **Make StartTrial the default place to scale new themes.**  
+  - Especially for **female music-track creatives** where purchase CPT is not yet acceptable.  
+
+- **Be ruthless on purchase lines with $50–90+ CPT** unless they’re clearly funding learning for a future StartTrial push.  
+
+- **Keep a close eye on female purchase heroes (06 fbg og, Prerna).**  
+  - They’re still important, but **no longer cheap**. Treat them as **controlled, capped performance assets**, not bottomless budget sinks.
