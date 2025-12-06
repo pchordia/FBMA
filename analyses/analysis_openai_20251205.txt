@@ -1,0 +1,69 @@
+Facebook Ads Analysis (OpenAI GPT) - 20251205
+================================================================================
+
+### 1️⃣ Overall Performance (last 7 days)
+
+**High level**
+
+- Spend has **shifted from Start‑Trial → Purchase campaigns**, pulling CPT up as we scaled new female rap (Big Energy / WAP / G Thang) and singing tests.
+- **Core rap‑female & baby avatars still drive most profitable trials.** New purchase campaigns add volume but also a lot of waste (especially WAP variants).
+
+**Directional CPT trend (all trial / subscribe events)**
+
+- **Nov 29–Dec 1 (Start‑Trial heavy):**  
+  - Core “06 fbg og” & “12 Prerna” running at **~$8–15 CPT** on large spend.  
+- **Dec 2–3 (more purchase + Start‑Trial):**  
+  - Blended CPT moves into **~$15–25**, especially as we push harder on “Prerna” & new sets.
+- **Dec 4–5 (Purchase_Rap 251203 & WAP live):**  
+  - Good new pockets at **$18–30 CPT** (e.g. **03_blackbodysuit_Big Energy**, **Morgan G Thang**).  
+  - But **WAP 1/2 02_blackNew** drives CPT into **$60–150+** and drags the blended number up into the **low/mid‑$30s**.
+
+**Takeaway:**  
+We still have a **very strong spine of efficient trial creatives**, but the **new purchase campaigns are mixing in both winners and expensive noise.** The job now is pruning and consolidating.
+
+
+
+---
+
+### 2️⃣ 🏆 What’s Working (core scale + promising tests)
+
+#### 2.1 Core scale creatives (real spend, good CPT)
+
+| Creative / Theme | Campaign / Set | Last‑days Spend* | CTR | CPC | CPI (install) | CPT / Subscribe CPA | Note |
+|---|---|---|---|---|---|---|---|
+| **06 fbg og** (female rap OG) | StartTrial Set1 + Install female | **$600–700+** across week | 2–2.5% | **$0.40–0.80** | **$1–4** | Early week **$9–15 CPT**, still solid | Absolute backbone. Cheap traffic, strong trial rate. Slight CPT creep as we scaled. |
+| **12 Prerna** (female, yellow dress) – **Copy (install)** | FB_iOS_itoshi_rap_female (install) | **$350–450+** | ~2.5% | **$0.45–0.60** | **~$1–3** | In Start‑Trial sets: **$8–14 CPT** (Nov 29–Dec 1); in Purchase sets now **$30–45+** | Monster for volume. Great for installs & trials when optimized for Start‑Trial; CPT worsens under Purchase objective. |
+| **02 Eddie_Snoop** (male rap) | StartTrial Set2 + Install set2 + Purchase_Rap | **$250–300+** | 2–2.4% | **$0.40–0.90** | **$1–3** | Start‑Trial CPT typically **$10–20**, Purchase CPAs **$10–25** | Very healthy funnel; good male anchor next to female rap. |
+| **04 Morgan_Gin** (male) | Install set2 + StartTrial set2 | **$250–300+** | ~2.4% | **$0.38–0.55** | **~$1.3–1.6** | Start‑Trial CPT **low‑teens** | Another core workhorse. High CTR + stable post‑install conversion. |
+| **03_blackbodysuit_Big energy – Copy** (female Big Energy) | **Purchase_Rap 251203 – BigEnergy** | **$80–140 /day** | **2.1–2.6%** | **$0.95–1.2** | **~$2.5** | Purchase CPA ~**$20**, subscribe CPA **~$35** | Strong new female *purchase* creative – best of the new 251203 batch. Deserves more budget. |
+| **04_MorganF_Nuthin But A G Thang** (female) | Install_Rap_GThang + Purchase_Rap GThang | **$80–100+/day** | **3.3–3.4%** | **~$0.28–0.37** | **~$1.1–1.3** | Purchase CPA **mid‑$20s–30s**, subscribe CPA **~$40–80** depending on day | Outstanding install economics + decent downstream. One of the few “new song” assets that looks scalable. |
+| **jesus_rap_1_4x5** (OG hero) | FB_iOS_itoshi_rap_install (set1) | **$70–90/day**, every day | ~1.2–1.3% | **$0.65–0.85** | **~$1.5–2.0** | Where tracked, trials are cheap when optimized to Start‑Trial (~high‑teens) | Still our **cheapest, steadiest top‑funnel** driver. Great TV‑style “evergreen”. |
+
+\*Spend ranges are 7‑day ballparks from the logs.
+
+**Patterns among winners**
+
+- **Female rap avatars (Prerna / fbg OG / black bodysuit / MorganF)** are consistently the **lowest‑CPT & highest‑CTR** assets.
+- **“Classic” rap tracks & simple performance framing** (rap to camera) are beating **heavier concept pieces** (ai‑artist, complex edits).
+- **Baby avatars** (Asian baby, black baby) are solid second‑tier: strong CTR, good CPI, **CPT in mid‑teens to low‑20s** when optimized correctly.
+
+---
+
+#### 2.2 Promising but low‑spend tests
+
+| Creative | Campaign | Spend | CTR | CPC | CPI | Comment |
+|---|---|---|---|---|---|---|
+| **God’s Plan – Eddie / Lebron / Snoop** | Gospel_Singing_251203 | $7–20 each | 1.2–3.4% | **$0.30–1.1** | **$1–4** | Surprisingly strong hook for singing; very healthy funnel top‑to‑bottom. Worth a proper CPT read if/when trials wired. |
+| **RapSinging Dakiti / DTFM variants** | Purchase_RapSinging_251205 | Mostly <$30 each | 0.7–2.0% | $1.8–3.5 | CPI $4–12 | Mixed, but a few (e.g. **Cristiano Dakiti**, **Tyson DTFM**) show **nice CTR & install costs**. Need trial data before scaling. |
+| **WAP 1 / WAP 2 – 04_fbg & 11_yellow dress** | Purchase_Rap 251203 | $10–40 | 2–3% | **$0.7–1.3** | **$2–4** | Conversion past install not terrible on *some* variants. A few WAP units could be salvaged once bad ones are cut. |
+
+**Action:**  
+These are **good candidates for incremental scale after we clean up the obvious losers**, especially in **God’s Plan / Dakiti singing** and **a small subset of WAP**.
+
+
+
+---
+
+### 3️⃣ 🚧 What’s Not Working (waste & broken funnels)
+
+#### 3.
