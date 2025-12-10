@@ -1,14 +1,16 @@
 name: Facebook Budget Scheduler
 
 on:
-  schedule:
-    # Runs at 12:00 AM Pacific Time (8:00 AM UTC during PST, 7:00 AM UTC during PDT)
-    # Using 8:00 AM UTC for standard time
-    - cron: '0 8 * * *'
-    
-    # Runs at 7:00 AM Pacific Time (3:00 PM UTC during PST, 2:00 PM UTC during PDT)
-    # Using 3:00 PM UTC for standard time
-    - cron: '0 15 * * *'
+  # DISABLED: Automatic budget scheduling
+  # To re-enable, uncomment the schedule section below
+  # schedule:
+  #   # Runs at 12:00 AM Pacific Time (8:00 AM UTC during PST, 7:00 AM UTC during PDT)
+  #   # Using 8:00 AM UTC for standard time
+  #   - cron: '0 8 * * *'
+  #   
+  #   # Runs at 7:00 AM Pacific Time (3:00 PM UTC during PST, 2:00 PM UTC during PDT)
+  #   # Using 3:00 PM UTC for standard time
+  #   - cron: '0 15 * * *'
     
   # Allows manual trigger from GitHub Actions tab
   workflow_dispatch:
