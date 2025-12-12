@@ -1,0 +1,166 @@
+Facebook Ads Analysis (OpenAI GPT) - 20251211
+================================================================================
+
+### 1️⃣ Overall performance (last 7 days)  
+
+**High level**
+
+- We’re now in a **much healthier CPT band** vs the start of the week.
+- **Early week (Dec 5–7):** core purchase campaigns (Jesus + Prerna + Black Baby) were effectively buying trials at **~$30–60 CPT**.
+- **End of week (Dec 9–11):** new **female rap avatar + StartTrial campaigns** are consistently in the **$6–20 CPT** range, with multiple assets at **$6–12** and solid volume.
+
+**Directional trend**
+
+- **Purchase → Trial efficiency improved ~40–50%** over the week, driven by:
+  - Shift from broad purchase optimization to **StartTrial** on rap sets.
+  - Heavy consolidation into a handful of **female rap avatars** (blonde, black bodysuit, Morgan/Prerna car variants).
+- Front‑end efficiency (CTR, CPC, CPI) has been stable all week:
+  - **CTR:** mostly **1.3–2.5%** on winners.
+  - **CPC:** **$0.8–$1.5**.
+  - **CPI:** **$2.5–$4.5** on best ads.  
+- The **big swing is post‑install**: install→trial conversion is much stronger on the new female rap concepts than on Jesus/Black Baby.
+
+---
+
+### 2️⃣ What’s working 🏆  
+
+#### 2.1 Core scale creatives (real spend + strong CPT)
+
+> Roughly ordered by **current CPT + scale** (using last 1–3 days as signal).
+
+| Creative / Cluster | Campaign / Ad Set | Spend (recent day) | CPI (cpa_omni_app_install) | CPT (start_trial / subscribe) | Notes |
+|---|---|---|---|---|---|
+| **“01 Morgan_Snoop_Ginndjuice_01” (car text variant)** | StartTrial Set2 – `FB_iOS_Rap_StartTrial_morgancartextvariants_091225` | **$97** (Dec 11) | **$2.78** | **$6.08** | Killer start‑trial efficiency, high volume, Above Avg rankings across quality/engagement. This is a **core scale asset**. |
+| **“14 blonde – Copy 2” (female rap, 4x5)** | StartTrial female – `FB_iOS_Rap_StartTrial_female_281125` | **$130** (Dec 11) | **$3.43** | **$8.14** | Strong CTR (~1.3%), efficient CPI and CPT. Probably our **lowest blended CPT at real scale**. Should be one of the main budget buckets. |
+| **“03_blackbodysuit_Big energy – Copy”** | Purchase BigEnergy – `F_Purchase_Rap_BigEnergy_251203` | **$95** (Dec 11) | **$3.16** | **$9.48** (Dec 11), trended down from $17–30 earlier | This thing **got better every day** as delivery stabilized. Great CTR (~2.3%), solid purchase data too. Anchor female creative. |
+| **“04_MorganF_Nuthin But A G Thang – Copy”** | Purchase GThang – `F_Purchase_Rap_GThang_251203` | **$94–187 /day** | **$3.0–$2.6** | **~$9–13** (recent days) | One of the most consistent workhorses across the week. High CTR (2–2.3%), strong install and trial economics. Keep scaling. |
+| **“02_blackNew_Wap 2 – Copy”** | Purchase WAP2 – `F_Purhcase_Rap_WAP2_251203` | **$185** (Dec 10), **$96** (Dec 11) | **$3.3–3.7** | **~$16–19** | Slightly higher CPT than BigEnergy/GThang but still solid, with lots of volume. Good second‑tier scale. |
+| **“02_blackNew_Wap 1 – Copy”** | Purchase WAP1 – `F_Purhcase_Rap_WAP1_251203` | **$153** (Dec 10), **$76** (Dec 11) | **$4–7** | **~$12–22** | Strong post‑install conversion offsetting a bit weaker CPI. Worth keeping in rotation but behind BigEnergy/GThang in priority. |
+| **“12_prerna_noendcardaudio”** | StartTrial Set1 – `FB_iOS_Rap_StartTrial_winnersnomusic_091225` | **$98** (Dec 10), **$94** (Dec 11) | **$3.4–3.5** | **$7–12** | Very solid blended CPT with good scale. Slightly worse than Morgan car text, but reliable and diversified look. |
+
+**Key patterns among winners**
+
+- **Female rap avatars are now the spine of the account.**
+  - Black bodysuit (Big Energy), blonde variants, and Prerna/Morgan avatars account for **most efficient trial volume**.
+- **Music choices that work:**  
+  - **Big Energy, G Thang, WAP** combinations repeatedly show high CTR and good post‑install conversion.
+- **Shot + framing:**
+  - **Medium/close 4x5 portrait, simple backgrounds, strong text overlays** (especially Morgan/Prerna car variants) out‑perform busier environments.
+- **Optimization:**  
+  - Where we’ve moved from pure purchase to **StartTrial optimization**, CPT immediately improves (see Morgan/Prerna StartTrial ad sets).
+
+---
+
+#### 2.2 Promising but still “testing” (good early CPT, lower spend)
+
+| Creative | Cluster | Spend (per day scale) | CPI | CPT (where visible) | Why interesting |
+|---|---|---|---|---|---|
+| **“02 Prerna 01” (text variant)** | StartTrial Set2 – `prernatextvariants_091225` | **$33–37/day** | **$4–5.6** | **$8–18** | Multiple days with **sub‑$10–12 CPT** at modest spend. Nice backup female look; worth a budget bump. |
+| **“02 Prerna_tusa”** | StartTrial Set2 – `prernamusicvariants_091225` | **$66–109/day** | **~$3–3.6** | **$7–20** | Good CTR and CPI, with CPT hovering low‑teens. Strong candidate to sit just behind the top tier. |
+| **“Gasstation_rap Prerna/Morgan variants”** | StartTrial Set3 – `jumpoffvariants_101225` & `ginjuice+hht2variants_101225` | **$10–30 per creative** | **CPIs vary: $1.3–$5+** | CPT mostly **$10–25** where we see it | Mixed bag: a couple of assets (e.g. `02Prerna_gasstation1`, `04Prerna_redcar`) have **encouraging CPT** with tiny spend. Worth structured A/B vs existing car creatives. |
+| **“08_reddress_luther – sza”** | Singing test – luther (sza) | **$17 (Dec 10)** | **$4.3** | **~$8.6 CPT** | Singing creative with genuinely good CPT on small spend – interesting signal for a different performance persona. |
+
+---
+
+### 3️⃣ What’s *not* working 🚧  
+
+#### 3.1 High‑spend, weak CPT (clear candidates to cap or kill)
+
+| Creative / Cluster | Issue in funnel | CPI | CPT (approx) | Comment & Action |
+|---|---|---|---|---|
+| **“jesus_rap_1_4x5 – Copy” (purchase)** | **Install→trial conversion** very weak | CPI **$4–7** | **$45–65+** across early week | This was the original hero but now badly outclassed by female rap avatars. **Action:** Aggressively cap or pause all Jesus purchase variants in prospecting; keep only in small retargeting buckets if needed. |
+| **“11 black baby”** | High CPI and poor trial conversion | CPI **$8–18** | **$35–110** depending on day | Fluctuates but mostly **expensive trials** vs alternatives. The “baby” persona seems to attract curiosity but not payers. **Action:** Pull back to minimal test budget or retire. |
+| **“Gasstation singing (Dakiti/Dtfm clusters)”** | Good CTR, weak monetization | CPI often **$3–6** | Many days **no or very few trials**; when tracked, CPT **$20–60+** | Fun creative but not competitive on CPT yet. **Action:** Treat as R&D; keep tiny budgets only on the few SKUs that show sub‑$20 CPT, pause the rest. |
+| **“Prank / Bustdown” variants** (`prank`, `bustdown1/2`) | Sampling budget with poor economics | CPI **$3–5** | CPT mostly **$25–70+** or no trials | Adds noise, not trials. **Action:** Consolidate to 1–2 best performers or pause entire cluster. |
+
+#### 3.2 Long tail / noise
+
+- Dozens of **low‑spend 1–3 impression variants** (especially in singing & “Big Energy” / WAP clusters) are adding **no signal** but cluttering reporting.
+- These micro‑tests are fine operationally, but from a portfolio view:
+  - **99% of meaningful trials are coming from ~10 creatives.**
+  - The rest can either be bulk‑paused or left at **<1–2% of daily budget** purely for discovery.
+
+---
+
+### 4️⃣ Notable changes & swings 🔍  
+
+1. **Big Energy & GThang CPT collapsed (in a good way).**  
+   - `03_blackbodysuit_Big energy` and `04_MorganF_GThang` started the week in the **$25–40 CPT** range and are now consistently **$9–15** with high daily spend. That’s the algorithm finding its groove + better downstream optimization.
+
+2. **Female StartTrial sets hit the sweet spot.**  
+   - `14 blonde – Copy 2` and `01 Morgan_Snoop_Ginndjuice_01` went from “promising test” to **front‑line scale** in ~48 hours, all while keeping frequency low (~1.0–1.1). No fatigue yet, but we should expect it soon.
+
+3. **Legacy male / Jesus creatives faded.**  
+   - Jesus and some male avatars (Timmy, Tyson, etc.) are still getting spend but **CPT is 2–4x higher** than the new female winners. These should no longer be considered core UA assets.
+
+4. **Install economics stable, post‑install is the lever.**  
+   - Across campaigns, **CPC/CPI bands are tight and consistent**; swings in performance are driven almost entirely by **trial conversion** (creative promise vs in‑app experience for that persona).
+
+5. **Quality ranking often “Below Average” on winners… but that’s okay.**  
+   - Several top ads (`12 Prerna`, `03_blackbodysuit`, `02_blackNew` WAP) sit in “Below Average 35%” quality but still crush CPT. Meta’s perception of “quality” doesn’t match what converts for us; we should **optimize for CPT, not for quality ranking**.
+
+---
+
+### 5️⃣ Questions & hypotheses / next moves 🧪  
+
+**A. Double‑down / scaling questions**
+
+1. **How far can we push the top 3–4 female rap ads before fatigue?**  
+   - *Test:* Incremental bid/budget ramps on:
+     - `01 Morgan_Snoop_Ginndjuice_01`
+     - `14 blonde – Copy 2`
+     - `03_blackbodysuit_Big energy`
+     - `04_MorganF_GThang`  
+   - Monitor **frequency, CPT, and CTR** daily. Consider creative‑level caps (e.g. not letting frequency break 2.0 in any geo before we have fresh variants ready).
+
+2. **Can we port the best StartTrial winners into more purchase‑optimized campaigns without breaking CPT?**  
+   - *Test:* Duplicate `Morgan_Snoop` and `14 blonde` into:
+     - A **Purchase‑optimized** campaign with value/purchase event.
+     - A **StartTrial AEO** campaign side by side.  
+   - Compare **LTV / payer rate** while watching CPT.
+
+---
+
+**B. Creative / message hypotheses**
+
+3. **Is it the avatar, the song, or the framing that’s driving wins?**  
+   - *Test design:*  
+     - Hold **avatar constant** (e.g. black bodysuit) and cycle songs: Big Energy vs WAP2 vs GThang.  
+     - Hold **song constant** (e.g. Big Energy) and cycle outfits/poses.  
+   - Look at **trial‑per‑impression** over 3–4 days per cell.
+
+4. **Does explicit trial messaging improve install→trial conversion?**  
+   - Some winners have strong text (e.g. car text variants) – others don’t.  
+   - *Test:* For `14 blonde` and `03_blackbodysuit`, spin:
+     - A version with **hard “7‑day free AI avatar trial” copy**.
+     - A pure vibe version (no explicit offer).  
+   - Compare **ITR (install→trial) at matched CPI**.
+
+5. **Can singing personas be the next growth pocket?**  
+   - `08_reddress_luther` has **good early CPT**, while most Dakiti/DTFM are weak.  
+   - *Test:* Create **rap‑style edits** (faster cut, stronger hook, trial messaging) for the 1–2 best singing avatars and drop them into a **small StartTrial campaign**. See if they behave like rap winners once the framing matches.
+
+---
+
+**C. Cleanup / efficiency**
+
+6. **Can we safely prune 50–70% of the long tail without losing learning value?**  
+   - *Action plan:*  
+     - Bulk‑pause creatives with:
+       - **Spend >$50 and CPT >2x portfolio average**, or  
+       - **Spend >$20 and zero trials**, unless explicitly part of a test.  
+     - Recycle budget into the **top 10 performing IDs** and 3–5 structured new tests.
+
+7. **Do certain personas consistently underperform regardless of song/angle?**  
+   - Candidates: **Black Baby, some Timmy/Tyson/Michael singing variants**.  
+   - *Next step:* Quick persona‑level pivot table: persona vs CPT. Any that are red across the board should be parked for now.
+
+---
+
+**TL;DR for prioritization**
+
+- **Scale:** `Morgan_Snoop_Ginndjuice_01`, `14 blonde`, `03_blackbodysuit BigEnergy`, `04_MorganF GThang`, `02_blackNew WAP1/2`, `12_prerna_noendcardaudio`.  
+- **Trim hard:** Jesus purchase, Black Baby, most singing “Dakiti/DTFM”, Prank/Bustdown variants.  
+- **Test next:** More female rap variants around the winning avatars, structured song vs outfit tests, and 1–2 singing personas ported into the rap format.
+
+If you’d like, I can next break this down **by campaign** (Purchase vs StartTrial) or **by persona** to show where each dollar is actually generating trials.
