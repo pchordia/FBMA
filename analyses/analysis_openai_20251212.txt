@@ -1,0 +1,178 @@
+Facebook Ads Analysis (OpenAI GPT) - 20251212
+================================================================================
+
+### 1️⃣ Overall Performance (Last 7 Days)  
+
+**High‑level read:**  
+- Spend is fairly steady across the week with **a meaningful shift from Purchase → Start Trial optimization** after Dec 9.  
+- **CPT is clearly trending down** as budget moves into the female rap StartTrial cluster.  
+- Directionally:  
+
+> **Dec 6–8:** CPT dominated by Purchase campaigns → **~$35–60+ per trial**  
+> **Dec 9–10:** Mix of Purchase + StartTrial → **~$20–30 CPT**  
+> **Dec 11–12:** StartTrial female winners take over → **~$7–18 CPT** on scaled assets  
+
+So the **back half of the week is ~30–40% more efficient** on CPT than the front half, without a big drop in volume.
+
+---
+
+### 2️⃣ 🏆 What’s Working  
+
+#### 2.1 Core Scale Creatives (Real Spend + Good CPT)  
+
+These are the **money-makers right now** – high spend and repeatable CPT.
+
+| Creative / Character | Campaign / Adset | Last 3D Spend (approx) | CTR | CPC | CPI (cpa_omni_app_install) | CPT (start_trial / subscribe) | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **14 blonde – Copy 2** (female rapper) | StartTrial_female_281125 | **~$400** | 1.6% | ~$1.05 | **$2.2–3.4** | **$5–9** | Super-consistent winner. High CTR, cheap installs, solid install→trial (~25–30%). Anchor asset for female cluster. |
+| **Morgan Snoop Ginndjuice (car text)** | StartTrial_morgancartextvariants_091225 | **~$300** | 1.5–1.7% | ~$0.95 | **$2.8–5.2** | **$6–12** | Great economics, especially Dec 10–11 (CPT ~6–9). Strong watch time; feels like a “hero” evergreen. |
+| **Prerna – Tusa** | StartTrial_prernamusicvariants_091225 | **~$275** | ~1.5–1.7% | ~$1.2 | **$3–6.7** | **$7–20** (avg ~10–12) | Female reggaeton angle works. Slightly higher CPT variability by day but strong overall. Worth more budget. |
+| **12 Prerna – No end-card audio** | StartTrial_winnersnomusic_091225 | **~$285** | ~1.3–1.4% | ~$1.2–1.4 | **$3.1–3.5** | **$7–12** | “No endcard audio” variant is quietly excellent. Very efficient install→trial; low friction feel. |
+| **Eddie Snoop – Set2** | StartTrial_set2_281125 | **~$390** | 1.1–1.4% | ~$1.0–1.2 | **$3.4–3.9** | **~$8–18 (spiky)** | Big volume, but CPT bounces (one rough day at $30+). Good for scale, but needs tighter day‑by‑day guardrails. |
+| **03 Blackbodysuit – Big Energy** | Purchase_Rap_BigEnergy | **~$370** | 2.1–2.4% | ~$1.2–1.4 | **$3–3.7** | **~$9–11 (subscribe/trial)** | Still our **best-performing Purchase-optimized asset**. Strong creative hook; can justify BAU spend if we want deeper event. |
+| **04 MorganF – G Thang** | Purchase_Rap_GThang | **~$380** | 1.9–2.3% | ~$1.1–1.3 | **$2.6–3.6** | **~$9–16** | Another solid Purchase asset. Not as cheap as the StartTrial cluster, but good if we care about purchases, not just trials. |
+
+**Takeaways:**  
+- **Female rap StartTrial cluster is now the core engine.**  
+  - 14 Blonde + Morgan Snoop + Prerna (Tusa + no‑endcard) are all **sub‑$15 CPT with real spend**.  
+- The **best Purchase ads (Blackbodysuit BigEnergy & MorganF GThang)** are still decent, but CPT is meaningfully higher than StartTrial; they look more like **mid‑funnel / LTV plays** than pure acquisition workhorses.
+
+---
+
+#### 2.2 Promising But Lower-Volume Tests  
+
+These look great **on early data** – worth structured scale tests.
+
+| Creative | Campaign / Adset | Spend (Dec 10–12) | CTR | CPC | CPI | CPT | Why it’s interesting |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **35_blonde_bent** | StartTrial_blondelilkimvariants_111225 | **$~35** | ~2.1% | ~$1.16 | **$2.6** | **$3–6** | Insanely efficient early CPT, very strong CTR. Vol is still small; should be treated like a new hero candidate. |
+| **Prerna gasstation1** | StartTrial_prernajumpoffvariants_101225 | **~$30** | 1.6–2.0% | ~$1.4 | **$3–4.3** | **$11–17** | Gas-station setting + Prerna reads well. Not as elite as 14 Blonde, but promising for thematic expansion. |
+| **02_blonde_jumpoff_gasstation1** | StartTrial_blondelilkimvariants_111225 | **~$30** | ~2.3% | ~$1.26 | **$3–13** (volatile) | CPT noisy but CPI is strong. | The **hook clearly lands** (good CTR/CPI). If trial % holds, this can be another scalable blonde variant. |
+| **Prerna text variants (02/03)** | StartTrial_prernatextvariants_091225 | **$100–150 combined** | ~1.3–1.4% | ~$1.3–1.6 | **$4.8–9.3** | **~$8–23** | The text-led Prerna ads have solid funnel, especially 03. Could become “copy‑led” evergreen once we stabilize CPT. |
+
+**Action:** promote a small subset of these into **controlled scale tests** (clear caps, daily review) so we don’t overreact to small-sample noise.
+
+---
+
+### 3️⃣ 🚧 What’s Not Working / Where We’re Burning  
+
+Focusing on **ads with real spend** that are dragging blended CPT.
+
+#### 3.1 Underperforming Clusters  
+
+| Creative / Cluster | Primary Issue | Funnel Symptoms | CPT (rough) | Recommendation |
+| --- | --- | --- | --- | --- |
+| **11 Black Baby (Purchase)** | **Way too expensive trials** | High CPMs & CPC (~$3–4), CPT regularly **$90–110+** | $90–110+ | **Pause / archive.** Cute, but economics are off vs everything else. |
+| **Jesus_rap_1_4x5 (Purchase)** | Volatile, often expensive | Early week CPT **$45–95+**; last 3 days improved ($22–46) but unstable | $35–70 blended | **Keep but tightly capped.** Let StartTrial carry scale until this is consistently sub‑$30. |
+| **12 Prerna (Purchase)** | Big spender, meh efficiency | One of the **largest spenders (~$1.5k+)** with CPT mostly **$35–60** | $35–60 | **Rethink objective.** This character crushes on StartTrial; Purchase optimisation is likely overkill for UA. Move budget to StartTrial variants. |
+| **Singing: Dakiti / Luther / DTFM sets** | Concept cool, performance bad | CTR decent in places, but **CPT/CPA often $30–80+** and/or negligible conversions | $30–80+ (when we even get trials) | **Treat as R&D only.** Keep minimal test budgets, don’t scale. Almost all worse than rap StartTrial. |
+| **WAP1 / WAP2 female variants (non‑Blackbodysuit)** | Mid CTR, poor downstream | Many WAP1/WAP2 ads run **$20–40+ CPT** despite ok CTR (2–3%) | $25–40 | **Consolidate** into just 1–2 best WAP creatives or stop; they aren’t beating BigEnergy or StartTrial winners. |
+| **Gasstation male variants (Eddie/Mike)** | Great vibes, mediocre trials | Nice CTR (~1–2%) and CPI, but CPT drifts into **$20–35+** | $20–35 | **Use sparingly** for creative diversity, not as core scale until we see a break-even variant. |
+
+#### 3.2 Where the Funnel Breaks  
+
+Patterns across the losers:  
+
+- **Top-of-funnel is fine:**  
+  - Many “bad” assets still have **CTR in the 1.5–2.5%+ range** and reasonable CPCs (often <$2).  
+- **Problem is post-install:**
+  - Winners: Install → trial around **25–50%** (e.g. 12_prerna_noendcard, Morgan Snoop, 14 Blonde).  
+  - Losers: Install → trial often **<15–20%**, especially singing/Dakiti/Luther and some baby/bustdown tests.  
+- For Purchase-optimized campaigns, **purchase rate per install is low**, so even with ok CPI we land at **$50–100+ per payer**, far worse than just optimizing for StartTrial.
+
+**Net:** the **biggest leakage is install→trial / install→purchase**, not impressions→clicks. That’s why shifting budget into high-converting StartTrial assets is helping CPT so much.
+
+---
+
+### 4️⃣ 🔄 Notable Changes & Swings  
+
+A few things that **jump out over the week**:
+
+1. **CPT compression over time.**  
+   - Early week: heavily weighted to Purchase; CPT often **$40–60+**.  
+   - By Dec 10–12, as StartTrial female cluster ramps, most scaled assets sit in **$6–18 CPT**.  
+
+2. **Jesus Purchase ad finally calmed down.**  
+   - Dec 6–9: erratic CPT (spikes at **$90–140+**).  
+   - Dec 10–12: now landing in **$22–46** range. Still not StartTrial-good, but no longer a total outlier.  
+
+3. **14 Blonde & Morgan Snoop are “uncapped” in performance.**  
+   - They’ve taken **significant budget three days in a row** without showing meaningful fatigue (CTR and CPT are very flat).  
+   - No obvious sign we’ve topped out audiences yet – suggests **more headroom**.  
+
+4. **Gasstation & Jumpoff tests show strong CTR / CPI but noisy CPT.**  
+   - Many of these tests win the click, but **ITR is not yet consistent**, so CPT bounces from great (sub‑$10) to mediocre ($25–30+) day‑to‑day.  
+
+5. **Singing / DTFM / Luther remains a money sink.**  
+   - Despite a few isolated days with okay CPIs, **none of these clusters beat rap StartTrial on CPT** and many are 2–3x worse.  
+   - Good for creative learning and brand, bad for performance budgets.
+
+---
+
+### 5️⃣ 📊 Funnel by Cluster (Directional)  
+
+Rough 7‑day blended metrics for the main clusters (using scaled ads only):
+
+| Cluster | Example Ads | CTR | CPC | CPI | Est. Install→Trial | Est. CPT |
+| --- | --- | --- | --- | --- | --- | --- |
+| **StartTrial – Female Rap (core)** | 14 Blonde, Morgan Snoop Ginndjuice, Prerna Tusa, Prerna no‑endcard | **1.5–2.0%** | ~$1.0–1.3 | **$2.5–4** | **25–50%** | **$6–15** |
+| **Purchase – Female Rap (BigEnergy / GThang)** | 03 Blackbodysuit, MorganF G Thang | **2.0–2.4%** | ~$1.1–1.4 | **$3–4** | **25–35%** to trial/purchase | **$9–18** |
+| **StartTrial – Male Rap (Set1/2)** | Eddie Snoop, Tyson rap | **1.1–1.4%** | ~$1.0–1.7 | **$3–5** | **20–35%** | **$10–20 (high variance)** |
+| **Baby / Novelty Avatars (Purchase)** | 11 Black Baby, Lebron, etc. | ~1.0–1.3% | **$3–4** | **$6–10** | **<20%** | **$40–110+** |
+| **Singing: Dakiti / Luther / DTFM / Prank** | All singing sets | 1.5–2.0% | ~$1.5–3.0 | **$4–8** | **Low** – many days no trials/purchases | **$30–80+** |
+
+**Implication:** any incremental dollar we keep in **Female StartTrial cluster** instead of **Singing / Baby / pure Purchase BAU** is almost guaranteed CPT improvement.
+
+---
+
+### 6️⃣ ❓ Questions & Hypotheses / Next Tests  
+
+Here’s what I’d want to dig into next and how to test it.
+
+1. **Should we effectively standardize on StartTrial optimization for UA?**  
+   - **Hypothesis:** For acquisition, StartTrial (or subscribe) optimization outperforms Purchase on CPT without materially hurting LTV.  
+   - **Test:**  
+     - A/B at campaign level: Purchase vs StartTrial using same top creatives (e.g. 14 Blonde, Morgan Snoop).  
+     - Track CPT + early monetization/retention to see if Purchase buys higher LTV or just fewer users.
+
+2. **Can we push much harder into the female rap cluster before hitting saturation?**  
+   - **Hypothesis:** We still have significant audience headroom; frequency is low and performance isn’t decaying.  
+   - **Test:**  
+     - Gradually **double budgets over 3–4 days** on 14 Blonde + Morgan Snoop + Prerna Tusa while watching frequency, CTR, CPT.  
+     - Layer in more lookalikes / interests around music genres & creators that match winning themes.
+
+3. **Which creative elements actually drive the better install→trial rates?**  
+   - **Hypothesis:** Specific combos (female POV + close-up framing + certain songs) are responsible for the superior ITR, not just “female vs male”.  
+   - **Test:**  
+     - Structured creative matrix:  
+       - Same avatar + 2–3 different songs / flows.  
+       - Same song + different scenes (gasstation vs car vs studio vs club).  
+       - With vs without end-cards, subtitles, callouts.  
+     - Read ITR deltas, not just CTR, to understand **what helps people commit to trial**.
+
+4. **Can the gasstation/jumpoff look be made as efficient as core rap winners?**  
+   - **Hypothesis:** Gasstation/jumpoff style has great click appeal but needs stronger product framing to convert post-install.  
+   - **Test:**  
+     - New variants that **swap first 3 seconds** to use hooks proven in 14 Blonde / Morgan Snoop (strong value prop, on-screen text) while keeping the gasstation setting.  
+     - Try **shorter edits (6–10s)** for these, to filter out the “just vibes” watchers.
+
+5. **Do singing concepts have a place in performance UA, or just brand?**  
+   - **Hypothesis:** Singing is fun but not commercially viable at scale in its current form.  
+   - **Test:**  
+     - Keep a **small “experimental” budget cap** for one best Dakiti/Luther/Dtfm per week.  
+     - Only continue if we can **get CPT within 1.5x of StartTrial rap**; otherwise move them to organic / content / retargeting use.
+
+6. **Should we introduce more explicit trial CTAs in high-performing creatives?**  
+   - **Hypothesis:** Clearer “Start free trial / Make your own rap” overlays in top ads could push install→trial up a few points.  
+   - **Test:**  
+     - Duplicate 14 Blonde + Morgan Snoop + Prerna winners with **strong in-video CTA text** and compare ITR & CPT vs originals.
+
+---
+
+If we do nothing else next week, I’d:  
+
+1. **Shift more budget into the female StartTrial cluster** (14 Blonde, Morgan Snoop, Prerna Tusa, Prerna no‑endcard).  
+2. **Cap or pause** singing, baby, and most WAP1/WAP2 variants that are clearly north of $25–30 CPT.  
+3. **Use Purchase optimization sparingly**, mostly to validate LTV on already-proven StartTrial creatives, not as the default UA objective.
+
+That mix should keep **CPT trending down** while we keep exploring new looks (gasstation/jumpoff, text-led variants) in a controlled, low-waste way.
